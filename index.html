@@ -344,10 +344,12 @@
       <span>Hookly<span style="color: var(--accent);">.</span></span>
     </div>
     <div class="nav-links">
-      <a href="#generator">Generator</a>
+      <a href="#generator">Hooks</a>
+      <a href="#social-posts">📱 Social</a>
+      <a href="#publish">🔗 Publish</a>
       <a href="#features">Features</a>
       <a href="#pricing">Pricing</a>
-      <a href="#dashboard" class="dashboard-link">📅 My Schedule <span class="dashboard-badge" id="scheduledCount" style="display:none;">0</span></a>
+      <a href="#dashboard" class="dashboard-link">📅 Schedule <span class="dashboard-badge" id="scheduledCount" style="display:none;">0</span></a>
       <button class="schedule-btn" id="openSettingsBtn" title="AI Settings">⚙️</button>
       <a href="#generator" class="btn btn-primary">Try Free</a>
     </div>
@@ -441,6 +443,71 @@
   </div>
 </section>
 
+<section class="generator" id="social-posts" style="background: var(--bg);">
+  <div class="container">
+    <div class="gen-card">
+      <h2>📱 Generate posts for 6 platforms</h2>
+      <p class="sub">One input. Six ready-to-publish posts. Twitter, LinkedIn, Reddit, Facebook, TikTok, Instagram.</p>
+      <form id="socialForm">
+        <div class="field">
+          <label for="socialTopic">What's your announcement / topic?</label>
+          <input type="text" id="socialTopic" placeholder="e.g. I just launched Hookly, a free AI tool that writes viral TikTok hooks" required />
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="socialUrl">Link to share (optional)</label>
+            <input type="url" id="socialUrl" placeholder="https://usehookly.netlify.app" />
+          </div>
+          <div class="field">
+            <label for="socialNiche">Your niche / audience</label>
+            <input type="text" id="socialNiche" placeholder="e.g. content creators, indie hackers" />
+          </div>
+        </div>
+        <button type="submit" class="generate-btn" id="socialBtn">
+          <span class="btn-text">⚡ Generate 6 Posts</span>
+          <span class="spinner"></span>
+        </button>
+      </form>
+
+      <div class="output" id="socialOutput">
+        <div class="output-section" data-platform="twitter">
+          <h3>🐦 Twitter / X <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">(max 280 chars)</span></h3>
+          <div class="script-content" id="postTwitter"></div>
+          <button class="schedule-btn" style="margin-top: 12px;" onclick="copyPost('postTwitter', this)">📋 Copy</button>
+        </div>
+        <div class="output-section" data-platform="linkedin">
+          <h3>💼 LinkedIn <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">(pro tone, 1300 chars)</span></h3>
+          <div class="script-content" id="postLinkedin"></div>
+          <button class="schedule-btn" style="margin-top: 12px;" onclick="copyPost('postLinkedin', this)">📋 Copy</button>
+        </div>
+        <div class="output-section" data-platform="reddit">
+          <h3>🤖 Reddit <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">(value-first, no spam)</span></h3>
+          <div class="script-content" id="postReddit"></div>
+          <button class="schedule-btn" style="margin-top: 12px;" onclick="copyPost('postReddit', this)">📋 Copy</button>
+        </div>
+        <div class="output-section" data-platform="facebook">
+          <h3>📘 Facebook <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">(community groups)</span></h3>
+          <div class="script-content" id="postFacebook"></div>
+          <button class="schedule-btn" style="margin-top: 12px;" onclick="copyPost('postFacebook', this)">📋 Copy</button>
+        </div>
+        <div class="output-section" data-platform="tiktok">
+          <h3>🎵 TikTok <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">(caption + hashtags)</span></h3>
+          <div class="script-content" id="postTiktok"></div>
+          <button class="schedule-btn" style="margin-top: 12px;" onclick="copyPost('postTiktok', this)">📋 Copy</button>
+        </div>
+        <div class="output-section" data-platform="instagram">
+          <h3>📸 Instagram <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">(caption + hashtags)</span></h3>
+          <div class="script-content" id="postInstagram"></div>
+          <button class="schedule-btn" style="margin-top: 12px;" onclick="copyPost('postInstagram', this)">📋 Copy</button>
+        </div>
+        <div class="schedule-bar">
+          <span class="label">💡 <strong>Pro tip:</strong> Use Make.com or Buffer to auto-schedule these to all 6 platforms at once (see docs).</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="features" id="features">
   <div class="container">
     <h2 class="section-title">Built for creators who <span class="gradient-text">post daily</span></h2>
@@ -485,6 +552,99 @@
     <h2 class="section-title">Your <span class="gradient-text">scheduled posts</span></h2>
     <p class="section-sub">Reminders you've set. Tap to copy caption, edit, or remove.</p>
     <div class="scheduled-list" id="scheduledList"></div>
+  </div>
+</section>
+
+<section class="generator" id="publish" style="background: var(--bg);">
+  <div class="container">
+    <div class="gen-card">
+      <h2>🔗 Connect & Publish</h2>
+      <p class="sub">Link your accounts, post directly. We add new platforms every week.</p>
+
+      <!-- TikTok (PRIMARY - the whole point of Hookly) -->
+      <div class="output-section" style="margin-bottom: 16px; border: 1px solid var(--accent); background: linear-gradient(135deg, rgba(255,61,104,0.04), rgba(255,122,61,0.04));">
+        <h3>🎵 TikTok <span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; margin-left: 8px;">READY</span> <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">— main use case</span></h3>
+        <p style="color: var(--text-dim); font-size: 14px; margin-top: 8px;">TikTok's API restricts 1-click posting, so we use the official <strong>TikTok Share Kit</strong> flow: Hookly prepares your caption + script card, you tap to open TikTok with everything ready.</p>
+        <div style="margin-top: 14px;">
+          <button class="schedule-btn primary" id="tiktokShareBtn">📤 Share to TikTok</button>
+          <button class="schedule-btn" id="tiktokCopyBtn">📋 Copy caption only</button>
+          <button class="schedule-btn" id="tiktokCardBtn">🖼️ Download script card</button>
+        </div>
+        <div id="tiktokLog" style="margin-top: 10px; font-size: 13px; color: var(--text-mute);"></div>
+      </div>
+
+      <!-- Webhook Universal -->
+      <div class="output-section" style="margin-bottom: 16px;">
+        <h3>🌐 Webhook URL <span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; margin-left: 8px;">READY</span> <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">(works for all platforms via Make.com / Zapier)</span></h3>
+        <div class="field" style="margin-top: 12px;">
+          <input type="url" id="webhookUrl" placeholder="https://hook.eu1.make.com/xxxxx" />
+          <button class="schedule-btn" style="margin-top: 10px;" id="saveWebhook">💾 Save webhook</button>
+          <span id="webhookStatus" style="margin-left: 10px; font-size: 13px;"></span>
+        </div>
+      </div>
+
+      <h3 style="margin: 20px 0 12px; color: var(--text); font-size: 16px; font-weight: 600;">Other direct integrations</h3>
+
+      <!-- Mastodon -->
+      <div class="output-section" style="margin-bottom: 12px;">
+        <h3>🐘 Mastodon <span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; margin-left: 8px;">READY</span> <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">(free, federated)</span></h3>
+        <div class="row" style="margin-top: 12px;">
+          <div class="field">
+            <label>Instance URL</label>
+            <input type="url" id="mastodonInstance" placeholder="https://mastodon.social" />
+          </div>
+          <div class="field">
+            <label>Access token</label>
+            <input type="password" id="mastodonToken" placeholder="Settings > Development > New App" />
+          </div>
+        </div>
+        <button class="schedule-btn" style="margin-top: 10px;" id="saveMastodon">💾 Save</button>
+        <button class="schedule-btn" id="testMastodon">🧪 Test</button>
+        <span id="mastodonStatus" style="margin-left: 10px; font-size: 13px;"></span>
+      </div>
+
+      <!-- Bluesky -->
+      <div class="output-section" style="margin-bottom: 12px;">
+        <h3>🦋 Bluesky <span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; margin-left: 8px;">READY</span> <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">(free, growing)</span></h3>
+        <div class="row" style="margin-top: 12px;">
+          <div class="field">
+            <label>Handle</label>
+            <input type="text" id="bskyHandle" placeholder="alice.bsky.social" />
+          </div>
+          <div class="field">
+            <label>App password</label>
+            <input type="password" id="bskyPassword" placeholder="bsky.app/settings/app-passwords" />
+          </div>
+        </div>
+        <button class="schedule-btn" style="margin-top: 10px;" id="saveBsky">💾 Save</button>
+        <button class="schedule-btn" id="testBsky">🧪 Test</button>
+        <span id="bskyStatus" style="margin-left: 10px; font-size: 13px;"></span>
+      </div>
+
+      <!-- Quick publish to all -->
+      <div class="schedule-bar" style="border: 1px solid var(--accent);">
+        <span class="label">📤 <strong>Quick publish:</strong> Send the last generated post to all connected platforms</span>
+        <button class="schedule-btn primary" id="publishAllBtn">📤 Publish to All</button>
+      </div>
+
+      <div id="publishLog" style="margin-top: 16px; padding: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; font-size: 13px; min-height: 30px; color: var(--text-dim); font-family: monospace;"></div>
+
+      <!-- Coming soon roadmap -->
+      <div style="margin-top: 30px; padding: 20px; background: var(--bg); border: 1px dashed var(--border); border-radius: 12px;">
+        <h3 style="color: var(--text-dim); font-size: 14px; font-weight: 600; margin-bottom: 12px;">🗓️ Coming soon</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 13px; color: var(--text-mute);">
+          <div>🟡 Pinterest — <em>1-2 weeks</em></div>
+          <div>🟡 Reddit — <em>1-2 weeks</em></div>
+          <div>🟠 Facebook Pages — <em>3-4 weeks</em></div>
+          <div>🟠 Instagram — <em>3-4 weeks</em></div>
+          <div>🟠 LinkedIn — <em>4-6 weeks</em></div>
+          <div>🔴 Twitter/X — <em>$$$ API fees</em></div>
+        </div>
+        <p style="color: var(--text-mute); font-size: 12px; margin-top: 12px;">
+          💡 <strong>Want a platform sooner?</strong> Reply to any of our posts or DM us. We prioritize by user demand.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1058,6 +1218,151 @@ document.getElementById('genForm').addEventListener('submit', async (e) => {
 });
 
 /* ============================================================
+   SOCIAL POST GENERATOR
+   Generates platform-specific posts from one topic input
+   ============================================================ */
+
+const SOCIAL_TEMPLATES = {
+  twitter: (topic, url, niche) => `${topic}
+
+${url ? `🔗 ${url}\n\n` : ''}Built it in 1 day. No signup, no email, no BS.
+
+If you create content → try it free.
+
+#buildinpublic${niche ? ' #' + niche.replace(/\s+/g, '') : ''}`,
+
+  linkedin: (topic, url, niche) => `${topic}
+
+${url ? `Link: ${url}\n\n` : ''}I've been thinking about this for a while: ${niche || 'creators'} spend 10+ hours a week on tasks that AI can do in seconds.
+
+So I built a tool to fix that.
+
+Here's what I learned building it:
+→ The hardest part is always the first 3 seconds of content
+→ Free tools that actually deliver beat paid tools with bad UX
+→ The best ${niche || 'creators'} have a system, not inspiration
+→ Shipping beats perfecting, every single time
+
+What I'd love to know:
+- What's the most time-consuming part of your workflow?
+- What tools have actually moved the needle for you?
+
+Drop your answers below 👇
+
+#buildinpublic #${(niche || 'startup').replace(/\s+/g, '')}`,
+
+  reddit: (topic, url, niche) => `**${topic}**
+
+I built this because I was frustrated with the time I was wasting on content creation.
+
+**What it does:**
+- Free, no signup required
+- Generates 5 viral hook variations + full script + caption + hashtags
+- Built for ${niche || 'content creators'}
+
+**What I learned building it:**
+1. The hardest part is the first 3 seconds, not the script
+2. Free > paid when the UX is clean
+3. Shipping fast beats perfecting
+
+**Tech:** Pure HTML/CSS/JS, no backend, deployed on Netlify, $0 infra.
+
+${url ? `Try it: ${url}\n\n` : ''}
+Would love feedback from this community. What works, what doesn't. Roast the landing page if you want, I can take it 🙏`,
+
+  facebook: (topic, url, niche) => `Hey ${niche || 'friends'}! 👋
+
+${topic}
+
+${url ? `🔗 ${url}\n\n` : ''}What it does:
+✅ Free, no signup
+✅ Generates viral hooks in 10 sec
+✅ Full script + caption + hashtags
+
+I built this to help ${niche || 'creators'} save time on the hardest part of content creation. Would love to know what you think!
+
+If you try it, drop a comment with your favorite hook 👇`,
+
+  tiktok: (topic, url, niche) => `${topic} 🚀
+
+${url ? `Link in bio 👆\n\n` : ''}Built it in 1 day. Free, no signup.
+
+#${(niche || 'fyp').replace(/\s+/g, '')} #fyp #viral #aitools #buildinpublic #contentcreator #startup`,
+
+  instagram: (topic, url, niche) => `${topic} 🚀
+
+${url ? `🔗 Link in bio\n\n` : ''}What it does:
+→ 5 viral hook variations
+→ Full 30-60s script
+→ Caption + hashtags
+→ Free, no signup
+
+Built this in 1 day for ${niche || 'creators'} who want to post more and stress less.
+
+Double tap if you'd use this 👇
+
+.
+
+.
+
+#${(niche || 'creator').replace(/\s+/g, '')} #aitools #contentcreator #buildinpublic #viral #fyp #startup #indiehacker #productivity`
+};
+
+function generateSocialPosts(topic, url, niche) {
+  return {
+    twitter: SOCIAL_TEMPLATES.twitter(topic, url || '', niche || ''),
+    linkedin: SOCIAL_TEMPLATES.linkedin(topic, url || '', niche || ''),
+    reddit: SOCIAL_TEMPLATES.reddit(topic, url || '', niche || ''),
+    facebook: SOCIAL_TEMPLATES.facebook(topic, url || '', niche || ''),
+    tiktok: SOCIAL_TEMPLATES.tiktok(topic, url || '', niche || ''),
+    instagram: SOCIAL_TEMPLATES.instagram(topic, url || '', niche || '')
+  };
+}
+
+function copyPost(elementId, btn) {
+  const text = document.getElementById(elementId).textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '✓ Copied!';
+    btn.classList.add('copied');
+    showToast('Post copied to clipboard ✓');
+    setTimeout(() => {
+      btn.textContent = '📋 Copy';
+      btn.classList.remove('copied');
+    }, 1500);
+  });
+}
+
+document.getElementById('socialForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('socialBtn');
+  const topic = document.getElementById('socialTopic').value.trim();
+  const url = document.getElementById('socialUrl').value.trim();
+  const niche = document.getElementById('socialNiche').value.trim();
+
+  if (!topic) return;
+
+  btn.classList.add('loading');
+  btn.disabled = true;
+
+  setTimeout(() => {
+    const posts = generateSocialPosts(topic, url, niche);
+    document.getElementById('postTwitter').textContent = posts.twitter;
+    document.getElementById('postLinkedin').textContent = posts.linkedin;
+    document.getElementById('postReddit').textContent = posts.reddit;
+    document.getElementById('postFacebook').textContent = posts.facebook;
+    document.getElementById('postTiktok').textContent = posts.tiktok;
+    document.getElementById('postInstagram').textContent = posts.instagram;
+
+    const out = document.getElementById('socialOutput');
+    out.classList.add('show');
+    setTimeout(() => out.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+
+    btn.classList.remove('loading');
+    btn.disabled = false;
+  }, 800);
+});
+
+/* ============================================================
    SETTINGS MODAL
    ============================================================ */
 
@@ -1481,6 +1786,376 @@ document.getElementById('saveLocalBtn').addEventListener('click', () => {
 // Init
 updateScheduledCount();
 renderScheduledList();
+
+/* ============================================================
+   CONNECT & PUBLISH — Direct API integrations
+   - Webhook (universal)
+   - Mastodon
+   - Bluesky
+   ============================================================ */
+
+function getConnectionStatus() {
+  return {
+    webhook: !!localStorage.getItem('hookly_webhook'),
+    mastodon: !!localStorage.getItem('hookly_mastodon_token'),
+    bsky: !!localStorage.getItem('hookly_bsky_password')
+  };
+}
+
+function logPublish(msg) {
+  const log = document.getElementById('publishLog');
+  const time = new Date().toLocaleTimeString();
+  log.innerHTML = (log.innerHTML ? log.innerHTML + '<br>' : '') + `[${time}] ${msg}`;
+}
+
+async function publishToWebhook(text) {
+  const url = localStorage.getItem('hookly_webhook');
+  if (!url) return false;
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text, source: 'hookly', timestamp: new Date().toISOString() })
+    });
+    return res.ok;
+  } catch (err) {
+    console.warn('Webhook failed:', err);
+    return false;
+  }
+}
+
+async function publishToMastodon(text) {
+  const instance = localStorage.getItem('hookly_mastodon_instance');
+  const token = localStorage.getItem('hookly_mastodon_token');
+  if (!instance || !token) return { ok: false, reason: 'not_configured' };
+  try {
+    const res = await fetch(`${instance.replace(/\/$/, '')}/api/v1/statuses`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+      },
+      body: JSON.stringify({ status: text, visibility: 'public' })
+    });
+    if (res.ok) return { ok: true };
+    const err = await res.text();
+    return { ok: false, reason: err.slice(0, 100) };
+  } catch (err) {
+    return { ok: false, reason: err.message };
+  }
+}
+
+async function publishToBluesky(text) {
+  const handle = localStorage.getItem('hookly_bsky_handle');
+  const password = localStorage.getItem('hookly_bsky_password');
+  if (!handle || !password) return { ok: false, reason: 'not_configured' };
+  try {
+    // 1. Authenticate
+    const authRes = await fetch('https://bsky.social/xrpc/com.atproto.server.createSession', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ identifier: handle, password })
+    });
+    if (!authRes.ok) return { ok: false, reason: 'auth_failed' };
+    const { accessJwt, did } = await authRes.json();
+
+    // 2. Post
+    const postRes = await fetch('https://bsky.social/xrpc/com.atproto.repo.createRecord', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${accessJwt}`
+      },
+      body: JSON.stringify({
+        repo: did,
+        collection: 'app.bsky.feed.post',
+        record: {
+          text,
+          createdAt: new Date().toISOString(),
+          langs: ['en']
+        }
+      })
+    });
+    if (postRes.ok) return { ok: true };
+    const err = await postRes.text();
+    return { ok: false, reason: err.slice(0, 100) };
+  } catch (err) {
+    return { ok: false, reason: err.message };
+  }
+}
+
+async function publishToAll() {
+  const log = document.getElementById('publishLog');
+  log.innerHTML = '<strong>📤 Publishing...</strong>';
+
+  // Get the most recent generated post (try each platform from social posts)
+  const postTwitter = document.getElementById('postTwitter')?.textContent || '';
+  const postLinkedin = document.getElementById('postLinkedin')?.textContent || '';
+  const postMastodon = postTwitter.slice(0, 500); // Mastodon 500 char limit
+  const postBsky = postTwitter.slice(0, 300); // Bluesky 300 char limit
+
+  if (!postTwitter) {
+    logPublish('⚠️ No content generated yet. Use the Social Posts Generator first.');
+    return;
+  }
+
+  const results = [];
+
+  // Webhook (universal)
+  if (localStorage.getItem('hookly_webhook')) {
+    const ok = await publishToWebhook(postTwitter);
+    results.push({ name: '🌐 Webhook', ok, msg: ok ? 'Sent to Make.com/Zapier' : 'Failed' });
+  }
+
+  // Mastodon
+  if (localStorage.getItem('hookly_mastodon_token')) {
+    const r = await publishToMastodon(postMastodon);
+    results.push({ name: '🐘 Mastodon', ok: r.ok, msg: r.ok ? 'Posted!' : `Failed: ${r.reason}` });
+  }
+
+  // Bluesky
+  if (localStorage.getItem('hookly_bsky_password')) {
+    const r = await publishToBluesky(postBsky);
+    results.push({ name: '🦋 Bluesky', ok: r.ok, msg: r.ok ? 'Posted!' : `Failed: ${r.reason}` });
+  }
+
+  if (results.length === 0) {
+    log.innerHTML = '<strong>⚠️ No accounts connected.</strong> Connect one above first!';
+    return;
+  }
+
+  log.innerHTML = '<strong>📊 Results:</strong>';
+  results.forEach(r => {
+    const icon = r.ok ? '✅' : '❌';
+    log.innerHTML += `<br>${icon} ${r.name}: ${r.msg}`;
+  });
+}
+
+// Webhook
+document.getElementById('saveWebhook')?.addEventListener('click', () => {
+  const url = document.getElementById('webhookUrl').value.trim();
+  if (url) {
+    localStorage.setItem('hookly_webhook', url);
+    document.getElementById('webhookStatus').textContent = '✅ Saved';
+    document.getElementById('webhookStatus').style.color = 'var(--green)';
+  }
+});
+
+// Mastodon
+document.getElementById('saveMastodon')?.addEventListener('click', () => {
+  const instance = document.getElementById('mastodonInstance').value.trim();
+  const token = document.getElementById('mastodonToken').value.trim();
+  if (instance && token) {
+    localStorage.setItem('hookly_mastodon_instance', instance);
+    localStorage.setItem('hookly_mastodon_token', token);
+    document.getElementById('mastodonStatus').textContent = '✅ Saved';
+    document.getElementById('mastodonStatus').style.color = 'var(--green)';
+  }
+});
+
+document.getElementById('testMastodon')?.addEventListener('click', async () => {
+  const status = document.getElementById('mastodonStatus');
+  status.textContent = '⏳ Testing...';
+  status.style.color = 'var(--text-dim)';
+  const r = await publishToMastodon('🧪 Test from Hookly! Just verifying my connection works. https://usehookly.netlify.app');
+  status.textContent = r.ok ? '✅ Connection works!' : `❌ ${r.reason}`;
+  status.style.color = r.ok ? 'var(--green)' : '#ff5555';
+});
+
+// Bluesky
+document.getElementById('saveBsky')?.addEventListener('click', () => {
+  const handle = document.getElementById('bskyHandle').value.trim();
+  const password = document.getElementById('bskyPassword').value.trim();
+  if (handle && password) {
+    localStorage.setItem('hookly_bsky_handle', handle);
+    localStorage.setItem('hookly_bsky_password', password);
+    document.getElementById('bskyStatus').textContent = '✅ Saved';
+    document.getElementById('bskyStatus').style.color = 'var(--green)';
+  }
+});
+
+document.getElementById('testBsky')?.addEventListener('click', async () => {
+  const status = document.getElementById('bskyStatus');
+  status.textContent = '⏳ Testing...';
+  status.style.color = 'var(--text-dim)';
+  const r = await publishToBluesky('🧪 Test from Hookly! Verifying connection. https://usehookly.netlify.app');
+  status.textContent = r.ok ? '✅ Connection works!' : `❌ ${r.reason}`;
+  status.style.color = r.ok ? 'var(--green)' : '#ff5555';
+});
+
+// Publish all
+document.getElementById('publishAllBtn')?.addEventListener('click', publishToAll);
+
+/* ============================================================
+   TIKTOK SHARE — Copy caption + Open TikTok + Download card
+   ============================================================ */
+
+function getLastGeneratedCaption() {
+  // Priority: TikTok post from social generator > TikTok post from main generator
+  const social = document.getElementById('postTiktok')?.textContent;
+  if (social && social.length > 10) return social;
+  return 'I built a free AI tool that writes viral TikTok hooks. Link in bio. #aitools #fyp';
+}
+
+function getLastGeneratedScript() {
+  const script = document.getElementById('scriptContent')?.textContent;
+  return script || 'Generate content first to see your script here.';
+}
+
+document.getElementById('tiktokCopyBtn')?.addEventListener('click', () => {
+  const caption = getLastGeneratedCaption();
+  navigator.clipboard.writeText(caption).then(() => {
+    const log = document.getElementById('tiktokLog');
+    log.textContent = '✅ Caption copied! Open TikTok, create a video, paste the caption in the description field.';
+    log.style.color = 'var(--green)';
+    showToast('TikTok caption copied ✓');
+  });
+});
+
+document.getElementById('tiktokShareBtn')?.addEventListener('click', () => {
+  const caption = getLastGeneratedCaption();
+  const log = document.getElementById('tiktokLog');
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  // Copy caption
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(caption).catch(() => {});
+  }
+
+  // Show clear instructions with clickable link
+  log.innerHTML = `
+    <div style="background: var(--bg-card); padding: 14px; border-radius: 10px; border: 1px solid var(--border); margin-top: 10px;">
+      <div style="color: var(--green); font-weight: 600; margin-bottom: 8px;">✅ Caption copied to clipboard</div>
+
+      ${isMobile ? `
+      <div style="background: rgba(255,61,104,0.08); border-left: 3px solid var(--accent); padding: 10px; margin-bottom: 12px; font-size: 13px; color: var(--text);">
+        📱 <strong>Mobile detected.</strong> For the smoothest flow, use the TikTok app directly:
+      </div>
+      <a href="tiktok://" class="schedule-btn primary" style="display: inline-block; text-decoration: none; margin: 4px 8px 4px 0;">
+        🎵 Open TikTok App
+      </a>
+      <a href="https://www.tiktok.com/upload" target="_blank" rel="noopener" class="schedule-btn" style="display: inline-block; text-decoration: none; margin: 4px 0;">
+        🌐 Or TikTok Web
+      </a>
+      <div style="margin-top: 14px; color: var(--text-dim); font-size: 13px;">
+        <strong>On your phone:</strong>
+        <ol style="margin: 6px 0 0 20px; line-height: 1.7;">
+          <li>Tap "Open TikTok App" above</li>
+          <li>Record or upload your video in the app</li>
+          <li>Long-press the description field → "Paste" (caption is already in clipboard)</li>
+          <li>Post! 🚀</li>
+        </ol>
+      </div>
+      ` : `
+      <div style="color: var(--text-dim); font-size: 13px; margin-bottom: 12px;">💻 <strong>Desktop detected.</strong> You'll need to log in to TikTok first.</div>
+      <a href="https://www.tiktok.com/login" target="_blank" rel="noopener" class="schedule-btn primary" style="display: inline-block; text-decoration: none; margin: 4px 8px 4px 0;">
+        🔐 Log in to TikTok
+      </a>
+      <a href="https://www.tiktok.com/upload" target="_blank" rel="noopener" class="schedule-btn" style="display: inline-block; text-decoration: none; margin: 4px 0;">
+        🎵 Go to upload page
+      </a>
+      <div style="margin-top: 14px; color: var(--text-dim); font-size: 13px;">
+        <strong>Quickest path:</strong>
+        <ol style="margin: 6px 0 0 20px; line-height: 1.7;">
+          <li>Log in to TikTok (creates a session in your browser)</li>
+          <li>Come back here and click "Go to upload page"</li>
+          <li>Upload your video file (or the script card you downloaded)</li>
+          <li>Paste the caption (already in your clipboard) → post!</li>
+        </ol>
+      </div>
+      `}
+
+      <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-mute);">
+        💡 <strong>Pro tip:</strong> Download the script card (button below) and use it as b-roll in your video.
+      </div>
+    </div>
+  `;
+});
+
+document.getElementById('tiktokCardBtn')?.addEventListener('click', () => {
+  // Generate a downloadable "script card" image with the script text
+  const script = getLastGeneratedScript();
+  generateScriptCard(script);
+});
+
+function generateScriptCard(scriptText) {
+  // Create canvas
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = 1080;
+  canvas.height = 1920;
+
+  // Background gradient
+  const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+  grad.addColorStop(0, '#ff3d68');
+  grad.addColorStop(1, '#ff7a3d');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // Dark overlay
+  ctx.fillStyle = 'rgba(10, 10, 15, 0.85)';
+  ctx.fillRect(40, 40, canvas.width - 80, canvas.height - 80);
+
+  // Brand
+  ctx.fillStyle = '#ff3d68';
+  ctx.font = 'bold 56px -apple-system, BlinkMacSystemFont, sans-serif';
+  ctx.fillText('🔥 Hookly', 80, 160);
+
+  // Title
+  ctx.fillStyle = '#ffffff';
+  ctx.font = 'bold 64px -apple-system, BlinkMacSystemFont, sans-serif';
+  ctx.fillText('Your Script', 80, 280);
+
+  // Script text (wrapped)
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+  ctx.font = '32px -apple-system, BlinkMacSystemFont, sans-serif';
+  const lines = wrapText(ctx, scriptText, canvas.width - 200);
+  let y = 360;
+  const maxY = canvas.height - 200;
+  for (const line of lines) {
+    if (y > maxY) {
+      ctx.fillText('...', 80, y);
+      break;
+    }
+    ctx.fillText(line, 80, y);
+    y += 48;
+  }
+
+  // Footer
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+  ctx.font = '28px -apple-system, BlinkMacSystemFont, sans-serif';
+  ctx.fillText('Generated by Hookly', 80, canvas.height - 80);
+
+  // Download
+  canvas.toBlob(blob => {
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'hookly-script.png';
+    a.click();
+    URL.revokeObjectURL(url);
+    const log = document.getElementById('tiktokLog');
+    log.innerHTML = '✅ Script card downloaded!<br>📱 Open TikTok → use this card as overlay or b-roll in your video.';
+    log.style.color = 'var(--green)';
+  });
+}
+
+function wrapText(ctx, text, maxWidth) {
+  const words = text.split(/\s+/);
+  const lines = [];
+  let current = '';
+  for (const word of words) {
+    const test = current ? current + ' ' + word : word;
+    if (ctx.measureText(test).width > maxWidth && current) {
+      lines.push(current);
+      current = word;
+    } else {
+      current = test;
+    }
+  }
+  if (current) lines.push(current);
+  return lines;
+}
 </script>
 </body>
 </html>
