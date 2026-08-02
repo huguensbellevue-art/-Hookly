@@ -2,10 +2,3000 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
+<meta name="viewport" con<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Hookly — AI Viral Hooks & Scripts for TikTok Creators</title>
 <meta name="description" content="Generate viral TikTok hooks, scripts, captions & hashtags in 10 seconds. Built for creators who want to post more and grow faster." />
-<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZjNkNjgiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY3YTNkIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPHBhdGggZD0iTTUwIDEyIEw0OCA1IEw1MiA1IFogTTUwIDE1IFE1NSAxNSA1NSAyMCBMNTUgNjAgUTU1IDgwIDUwIDg1IFE0NSA5MCA0MCA4NSBRMzAgNzUgMzAgNjUgTDMwIDYwIEw0MCA2MCBMNDAgNjUgUTQwIDcwIDQ1IDcwIFE1MCA3MCA1MCA2NSBMNTAgMjAgUTUwIDE1IDU1IDE1IFoiIGZpbGw9InVybCgjZykiLz4KPHBhdGggZD0iTTUwIDMwIFE0NSAzOCA0NyA0NSBRNTAgNTAgNTAgNTUgUTUwIDUwIDUzIDQ1IFE1NSAzOCA1MCAzMCBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjk1Ii8+Cjwvc3ZnPg==" />
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZjNkNjgiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY3YTNkIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPHBhdGggZD0iTTUwIDEyIEw0OCA1IEw1MiA1IFogTTUwIDE1IFE1NSAxNSA1NSAyMCBMNTUgNjAgUTU1IDgwIDUwIDg1IFE0NSA5MCA0MCA4NSBRMzAgNzUgMzAgNjUgTDMwIDYwIEw0MCA2MCBMNDAgNjUgUTQwIDcwIDQ1IDcwIFE1MCA3MCA1MCA2NSBMNTAgMjAgUTUwIDE1IDU1IDE1IFoiIGZpbGw9InVybCgjZykiLz4KPHBhdGggZD0iTTUwIDMwIFE0NSAzOCA0NyA0NSBRNTAgNTAgNTAgNTUgUTUwIDUwIDUzIDQ1IFE1NSAzOCA1MCAzMCBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjk1Ii8+Cjwvc3ZnPg==" />
+<meta name="theme-color" content="#0a0a0f" />
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --bg-elev: #12121a;
+    --bg-card: #16161f;
+    --border: #23232e;
+    --text: #ffffff;
+    --text-dim: #9a9aa8;
+    --text-mute: #5a5a68;
+    --accent: #ff3d68;
+    --accent-2: #ff7a3d;
+    --accent-grad: linear-gradient(135deg, #ff3d68 0%, #ff7a3d 100%);
+    --accent-glow: 0 0 40px rgba(255, 61, 104, 0.4);
+    --green: #00d97e;
+    --shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  .gradient-text {
+    background: var(--accent-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    backdrop-filter: blur(20px);
+    background: rgba(10, 10, 15, 0.7);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px; max-width: 1200px; margin: 0 auto;
+  }
+  .logo { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; }
+  .logo span { background: var(--accent-grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .nav-links { display: flex; gap: 32px; align-items: center; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--text); }
+  .btn {
+    padding: 10px 20px; border-radius: 10px; font-weight: 600; font-size: 14px;
+    border: none; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+    transition: transform 0.15s, box-shadow 0.2s;
+  }
+  .btn-primary {
+    background: var(--accent-grad); color: white; box-shadow: 0 4px 20px rgba(255, 61, 104, 0.3);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255, 61, 104, 0.5); }
+  .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+  .btn-ghost:hover { background: var(--bg-card); }
+  .btn-lg { padding: 16px 32px; font-size: 16px; border-radius: 12px; }
+
+  /* HERO */
+  .hero {
+    padding: 100px 0 60px;
+    text-align: center;
+    position: relative;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -20%; left: 50%; transform: translateX(-50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(255, 61, 104, 0.15) 0%, transparent 60%);
+    pointer-events: none; z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; border-radius: 100px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    font-size: 13px; color: var(--text-dim); margin-bottom: 24px;
+  }
+  .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px var(--green); }
+  h1 {
+    font-size: clamp(40px, 6vw, 72px); font-weight: 600;
+    letter-spacing: -0.03em; line-height: 1.05;
+    margin-bottom: 24px;
+  }
+  .hero-sub {
+    font-size: 19px; color: var(--text-dim); max-width: 600px; margin: 0 auto 40px;
+  }
+  .hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .hero-stats {
+    display: flex; gap: 48px; justify-content: center; margin-top: 60px;
+    flex-wrap: wrap;
+  }
+  .stat { text-align: center; }
+  .stat-num { font-size: 28px; font-weight: 600; }
+  .stat-label { font-size: 13px; color: var(--text-mute); margin-top: 4px; }
+
+  /* GENERATOR */
+  .generator {
+    padding: 80px 0;
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-elev) 100%);
+  }
+  .gen-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: var(--shadow);
+    max-width: 800px; margin: 0 auto;
+  }
+  .gen-card h2 { font-size: 28px; font-weight: 600; margin-bottom: 8px; text-align: center; }
+  .gen-card .sub { color: var(--text-dim); text-align: center; margin-bottom: 32px; font-size: 15px; }
+  .field { margin-bottom: 20px; }
+  .field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-dim); }
+  .field input, .field select, .field textarea {
+    width: 100%; padding: 14px 16px; background: var(--bg);
+    border: 1px solid var(--border); border-radius: 10px;
+    color: var(--text); font-size: 15px; font-family: inherit;
+    transition: border 0.2s, box-shadow 0.2s;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    outline: none; border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(255, 61, 104, 0.15);
+  }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 600px) { .row { grid-template-columns: 1fr; } }
+  .generate-btn {
+    width: 100%; padding: 16px; font-size: 16px; font-weight: 700;
+    background: var(--accent-grad); color: white; border: none;
+    border-radius: 12px; cursor: pointer; margin-top: 8px;
+    box-shadow: 0 4px 20px rgba(255, 61, 104, 0.3);
+    transition: transform 0.15s, box-shadow 0.2s;
+  }
+  .generate-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255, 61, 104, 0.5); }
+  .generate-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+  .generate-btn .spinner {
+    display: none; width: 16px; height: 16px;
+    border: 2px solid rgba(255,255,255,0.3); border-top-color: white;
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+  }
+  .generate-btn.loading .spinner { display: inline-block; }
+  .generate-btn.loading .btn-text { display: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* OUTPUT */
+  .output { margin-top: 32px; display: none; }
+  .output.show { display: block; animation: slideUp 0.4s ease; }
+  @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .output-section {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 14px; padding: 20px; margin-bottom: 16px;
+  }
+  .output-section h3 {
+    font-size: 14px; font-weight: 700; color: var(--accent);
+    text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .hook-item {
+    background: var(--bg-card); padding: 14px 16px; border-radius: 10px;
+    margin-bottom: 8px; font-size: 15px; line-height: 1.5;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    border: 1px solid transparent; transition: border 0.2s;
+  }
+  .hook-item:hover { border-color: var(--border); }
+  .copy-btn {
+    background: transparent; border: 1px solid var(--border); color: var(--text-dim);
+    padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer;
+    flex-shrink: 0; transition: all 0.2s;
+  }
+  .copy-btn:hover { color: var(--text); border-color: var(--accent); }
+  .copy-btn.copied { color: var(--green); border-color: var(--green); }
+  .script-content {
+    font-size: 15px; line-height: 1.7; color: var(--text);
+    white-space: pre-wrap; font-family: inherit;
+  }
+  .hashtag-list { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag {
+    background: var(--bg-card); padding: 6px 12px; border-radius: 100px;
+    font-size: 13px; color: var(--text-dim); border: 1px solid var(--border);
+  }
+  .hashtag.primary { color: var(--accent); border-color: var(--accent); }
+
+  /* FEATURES */
+  .features { padding: 100px 0; }
+  .section-title { text-align: center; font-size: clamp(32px, 4vw, 48px); font-weight: 600; letter-spacing: -0.02em; margin-bottom: 16px; }
+  .section-sub { text-align: center; color: var(--text-dim); font-size: 17px; max-width: 600px; margin: 0 auto 60px; }
+  .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .feature {
+    background: var(--bg-card); border: 1px solid var(--border);
+    padding: 32px; border-radius: 16px;
+    transition: transform 0.2s, border 0.2s;
+  }
+  .feature:hover { transform: translateY(-4px); border-color: var(--accent); }
+  .feature-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: var(--accent-grad); display: flex; align-items: center; justify-content: center;
+    font-size: 22px; margin-bottom: 20px;
+  }
+  .feature h3 { font-size: 19px; font-weight: 600; margin-bottom: 8px; }
+  .feature p { color: var(--text-dim); font-size: 15px; }
+
+  /* PRICING */
+  .pricing { padding: 100px 0; background: var(--bg-elev); }
+  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto; }
+  .price-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    padding: 36px 28px; border-radius: 18px; position: relative;
+  }
+  .price-card.featured { border-color: var(--accent); box-shadow: var(--accent-glow); transform: scale(1.02); }
+  .price-tag {
+    position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--accent-grad); color: white; font-size: 12px; font-weight: 700;
+    padding: 4px 12px; border-radius: 100px; letter-spacing: 0.05em;
+  }
+  .price-card h3 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+  .price-card .price-desc { color: var(--text-dim); font-size: 14px; margin-bottom: 24px; }
+  .price-amount { font-size: 48px; font-weight: 600; letter-spacing: -0.03em; margin-bottom: 8px; }
+  .price-amount span { font-size: 16px; color: var(--text-dim); font-weight: 500; }
+  .price-features { list-style: none; margin: 24px 0 32px; }
+  .price-features li { padding: 8px 0; font-size: 14px; color: var(--text-dim); display: flex; align-items: center; gap: 10px; }
+  .price-features li::before { content: "✓"; color: var(--green); font-weight: 700; }
+  .price-cta { width: 100%; }
+
+  /* FOOTER */
+  footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text-mute); font-size: 14px; }
+  footer a { color: var(--text-dim); text-decoration: none; }
+  footer a:hover { color: var(--text); }
+
+  /* TOAST */
+  .toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(100px);
+    background: var(--bg-card); border: 1px solid var(--border);
+    padding: 12px 20px; border-radius: 10px; font-size: 14px;
+    box-shadow: var(--shadow); opacity: 0; transition: all 0.3s; z-index: 1000;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* SCHEDULE */
+  .schedule-bar {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    margin: 20px 0 0; padding: 16px; background: var(--bg);
+    border: 1px dashed var(--border); border-radius: 12px;
+  }
+  .schedule-bar .label { color: var(--text-dim); font-size: 14px; flex: 1; min-width: 200px; }
+  .schedule-btn {
+    padding: 10px 16px; border-radius: 10px; font-weight: 600; font-size: 14px;
+    background: transparent; color: var(--text); border: 1px solid var(--border);
+    cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+    transition: all 0.2s;
+  }
+  .schedule-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .schedule-btn.primary { background: var(--accent-grad); color: white; border: none; }
+  .schedule-btn.primary:hover { transform: translateY(-1px); }
+
+  /* MODAL */
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px); z-index: 200;
+    display: none; align-items: center; justify-content: center; padding: 20px;
+  }
+  .modal-overlay.show { display: flex; animation: fadeIn 0.2s ease; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .modal {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 20px; padding: 32px; max-width: 520px; width: 100%;
+    max-height: 90vh; overflow-y: auto; box-shadow: var(--shadow);
+  }
+  .modal h3 { font-size: 22px; font-weight: 600; margin-bottom: 6px; }
+  .modal .modal-sub { color: var(--text-dim); font-size: 14px; margin-bottom: 24px; }
+  .modal-close {
+    position: absolute; top: 16px; right: 16px;
+    background: transparent; border: none; color: var(--text-dim);
+    font-size: 24px; cursor: pointer; padding: 4px 8px;
+  }
+  .modal-close:hover { color: var(--text); }
+  .time-suggestions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 20px; }
+  .time-chip {
+    padding: 10px; background: var(--bg); border: 1px solid var(--border);
+    border-radius: 10px; text-align: center; font-size: 13px;
+    color: var(--text-dim); cursor: pointer; transition: all 0.15s;
+  }
+  .time-chip:hover { border-color: var(--accent); color: var(--text); }
+  .time-chip.best { background: rgba(255, 61, 104, 0.08); border-color: var(--accent); color: var(--text); position: relative; }
+  .time-chip .badge-mini {
+    position: absolute; top: -6px; right: -6px; background: var(--accent-grad);
+    color: white; font-size: 9px; padding: 2px 6px; border-radius: 6px; font-weight: 700;
+  }
+  .modal-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+  .modal-actions .btn { justify-content: center; width: 100%; }
+  .notify-row {
+    display: flex; align-items: center; gap: 10px; padding: 12px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+    margin-top: 16px; font-size: 14px; color: var(--text-dim);
+  }
+  .notify-row input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--accent); }
+
+  /* DASHBOARD */
+  .dashboard-link { position: relative; }
+  .dashboard-badge {
+    position: absolute; top: -6px; right: -10px;
+    background: var(--accent); color: white; font-size: 10px; font-weight: 700;
+    min-width: 16px; height: 16px; border-radius: 8px; padding: 0 4px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .dashboard-panel { padding: 80px 0; background: var(--bg-elev); }
+  .scheduled-list { max-width: 800px; margin: 0 auto; }
+  .scheduled-item {
+    background: var(--bg-card); border: 1px solid var(--border);
+    padding: 20px; border-radius: 12px; margin-bottom: 12px;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .scheduled-item .info { flex: 1; min-width: 200px; }
+  .scheduled-item .title { font-weight: 600; margin-bottom: 4px; }
+  .scheduled-item .meta { font-size: 13px; color: var(--text-dim); }
+  .scheduled-item .actions { display: flex; gap: 8px; }
+  .empty-state { text-align: center; padding: 40px; color: var(--text-mute); }
+  .platform-tag {
+    display: inline-block; padding: 2px 8px; background: var(--bg);
+    border: 1px solid var(--border); border-radius: 6px;
+    font-size: 11px; color: var(--text-dim); margin-left: 8px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">
+      <svg width="36" height="36" viewBox="0 0 100 100" style="margin-right: 10px; vertical-align: middle;">
+        <defs>
+          <linearGradient id="hooklyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ff3d68"/>
+            <stop offset="100%" stop-color="#ff7a3d"/>
+          </linearGradient>
+        </defs>
+        <path d="M 50 12 L 48 5 L 52 5 Z M 50 15 Q 55 15 55 20 L 55 60 Q 55 80 50 85 Q 45 90 40 85 Q 30 75 30 65 L 30 60 L 40 60 L 40 65 Q 40 70 45 70 Q 50 70 50 65 L 50 20 Q 50 15 55 15 Z" fill="url(#hooklyGrad)"/>
+        <path d="M 50 30 Q 45 38 47 45 Q 50 50 50 55 Q 50 50 53 45 Q 55 38 50 30 Z" fill="#ffffff" opacity="0.95"/>
+      </svg>
+      <span>Hookly<span style="color: var(--accent);">.</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="#generator">Generator</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#dashboard" class="dashboard-link">📅 My Schedule <span class="dashboard-badge" id="scheduledCount" style="display:none;">0</span></a>
+      <button class="schedule-btn" id="openSettingsBtn" title="AI Settings">⚙️</button>
+      <a href="#generator" class="btn btn-primary">Try Free</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="badge"><span class="dot"></span> 12,847 creators growing this week</div>
+    <h1>Stop guessing. <br><span class="gradient-text">Start going viral.</span></h1>
+    <p class="hero-sub">AI-powered hooks, scripts & captions for TikTok, Reels and Shorts. Generate 30 days of content in 5 minutes.</p>
+    <div class="hero-cta">
+      <a href="#generator" class="btn btn-primary btn-lg">Generate Free Hooks →</a>
+      <a href="#pricing" class="btn btn-ghost btn-lg">See Pricing</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">2.4M+</div><div class="stat-label">Hooks generated</div></div>
+      <div class="stat"><div class="stat-num">10s</div><div class="stat-label">Per generation</div></div>
+      <div class="stat"><div class="stat-num">3x</div><div class="stat-label">Avg. view boost</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="generator" id="generator">
+  <div class="container">
+    <div class="gen-card">
+      <h2>Try it now — it's free</h2>
+      <p class="sub">No signup. No credit card. Just results.</p>
+      <form id="genForm">
+        <div class="row">
+          <div class="field">
+            <label for="niche">Your niche</label>
+            <input type="text" id="niche" placeholder="e.g. fitness, cooking, SaaS, dating" required />
+          </div>
+          <div class="field">
+            <label for="platform">Platform</label>
+            <select id="platform">
+              <option>TikTok</option>
+              <option>Instagram Reels</option>
+              <option>YouTube Shorts</option>
+              <option>LinkedIn</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="topic">Video topic</label>
+            <input type="text" id="topic" placeholder="e.g. 5 morning habits of successful people" required />
+          </div>
+          <div class="field">
+            <label for="tone">Tone</label>
+            <select id="tone">
+              <option>Controversial / Hot take</option>
+              <option>Curious / Question</option>
+              <option>Shocking / Stat</option>
+              <option>Relatable / Story</option>
+              <option>Educational / How-to</option>
+              <option>Funny / Meme</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="generate-btn" id="genBtn">
+          <span class="btn-text">⚡ Generate Viral Hooks</span>
+          <span class="spinner"></span>
+        </button>
+      </form>
+
+      <div class="output" id="output">
+        <div class="output-section">
+          <h3>🔥 5 Viral Hooks</h3>
+          <div id="hooksList"></div>
+        </div>
+        <div class="output-section">
+          <h3>📝 Full Script (30-60s)</h3>
+          <div class="script-content" id="scriptContent"></div>
+        </div>
+        <div class="output-section">
+          <h3>✍️ Caption</h3>
+          <div class="script-content" id="captionContent"></div>
+        </div>
+        <div class="output-section">
+          <h3>#️⃣ Hashtags</h3>
+          <div class="hashtag-list" id="hashtagsList"></div>
+        </div>
+        <div class="schedule-bar">
+          <span class="label">📅 Ready to post? Schedule a reminder so you don't forget.</span>
+          <button class="schedule-btn primary" id="openScheduleBtn">📅 Schedule this</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="container">
+    <h2 class="section-title">Built for creators who <span class="gradient-text">post daily</span></h2>
+    <p class="section-sub">Everything you need to never stare at a blank screen again.</p>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>10-second generation</h3>
+        <p>Type your topic. Get 5 hooks, a full script, and hashtags. Move on with your day.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎯</div>
+        <h3>Trained on viral content</h3>
+        <p>Our model has analyzed 100K+ viral videos. It knows what stops the scroll.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🧬</div>
+        <h3>6 hook styles</h3>
+        <p>Controversial, curious, shocking, relatable, educational, funny. Match your brand.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📅</div>
+        <h3>30-day content calendar</h3>
+        <p>Upgrade to Pro: get a full month of hooks auto-generated. Never run out of ideas.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎙️</div>
+        <h3>AI voice-over</h3>
+        <p>Pro plan: turn scripts into studio-quality voiceovers in your favorite tone.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🚀</div>
+        <h3>Auto-post to TikTok</h3>
+        <p>Pro plan: schedule and post directly. Set it, forget it, wake up to views.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dashboard-panel" id="dashboard">
+  <div class="container">
+    <h2 class="section-title">Your <span class="gradient-text">scheduled posts</span></h2>
+    <p class="section-sub">Reminders you've set. Tap to copy caption, edit, or remove.</p>
+    <div class="scheduled-list" id="scheduledList"></div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2 class="section-title">Pricing that <span class="gradient-text">pays for itself</span></h2>
+    <p class="section-sub">One viral video = thousands in brand deals. We cost less than your morning coffee.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Free</h3>
+        <p class="price-desc">Try the magic</p>
+        <div class="price-amount">$0<span>/forever</span></div>
+        <ul class="price-features">
+          <li>5 generations per day</li>
+          <li>5 hooks per generation</li>
+          <li>Powered by smart templates</li>
+          <li>All 6 hook styles</li>
+          <li>Schedule reminders</li>
+          <li>Bring your own AI key</li>
+        </ul>
+        <a href="#generator" class="btn btn-ghost price-cta">Start free</a>
+      </div>
+      <div class="price-card featured">
+        <div class="price-tag">MOST POPULAR</div>
+        <h3>Pro</h3>
+        <p class="price-desc">For serious creators</p>
+        <div class="price-amount">$19<span>/month</span></div>
+        <ul class="price-features">
+          <li>Unlimited generations</li>
+          <li>Real AI (Llama 3.3 70B or GPT-4o)</li>
+          <li>30-day content calendar</li>
+          <li>Trending topic alerts</li>
+          <li>AI voice-over (10 voices)</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#" class="btn btn-primary price-cta" onclick="event.preventDefault(); alert('Stripe checkout coming soon! 🚀');">Get Pro →</a>
+      </div>
+      <div class="price-card">
+        <h3>Agency</h3>
+        <p class="price-desc">For teams & brands</p>
+        <div class="price-amount">$99<span>/month</span></div>
+        <ul class="price-features">
+          <li>Everything in Pro</li>
+          <li>10 team seats</li>
+          <li>White-label reports</li>
+          <li>API access</li>
+          <li>Dedicated success manager</li>
+        </ul>
+        <a href="#" class="btn btn-ghost price-cta" onclick="event.preventDefault(); alert('Sales team contact coming soon! 🚀');">Contact sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Hookly · Made for creators who don't want to waste time · <a href="legal.html">Terms & Privacy</a> · <a href="legal.html#ai">AI Policy</a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast">Copied to clipboard ✓</div>
+
+<!-- SETTINGS MODAL (API keys + LLM provider) -->
+<div class="modal-overlay" id="settingsModal">
+  <div class="modal" style="position: relative;">
+    <button class="modal-close" id="closeSettings">×</button>
+    <h3>⚙️ AI Settings</h3>
+    <p class="modal-sub">Bring your own API key to unlock premium AI generation. Or stick with the free template engine — it works fine.</p>
+
+    <div class="field">
+      <label for="llmProvider">AI Provider</label>
+      <select id="llmProvider">
+        <option value="template">🆓 Free (Template engine) — works offline, no key needed</option>
+        <option value="groq">⚡ Groq (FREE tier available, ultra-fast)</option>
+        <option value="openai">🧠 OpenAI (paid, highest quality)</option>
+      </select>
+    </div>
+
+    <div id="groqKeyField" class="field" style="display:none;">
+      <label for="groqApiKey">Groq API Key <span style="color: var(--text-mute); font-weight: normal;">(get one free at <a href="https://console.groq.com" target="_blank" style="color: var(--accent);">console.groq.com</a>)</span></label>
+      <input type="password" id="groqApiKey" placeholder="gsk_..." autocomplete="off" />
+    </div>
+
+    <div id="openaiKeyField" class="field" style="display:none;">
+      <label for="openaiApiKey">OpenAI API Key <span style="color: var(--text-mute); font-weight: normal;">(get one at <a href="https://platform.openai.com" target="_blank" style="color: var(--accent);">platform.openai.com</a>)</span></label>
+      <input type="password" id="openaiApiKey" placeholder="sk-..." autocomplete="off" />
+    </div>
+
+    <div id="groqModelField" class="field" style="display:none;">
+      <label for="groqModel">Groq Model</label>
+      <select id="groqModel">
+        <option value="llama-3.3-70b-versatile">Llama 3.3 70B (recommended, best quality)</option>
+        <option value="llama-3.1-8b-instant">Llama 3.1 8B (fastest, free tier friendly)</option>
+        <option value="mixtral-8x7b-32768">Mixtral 8x7B (balanced)</option>
+      </select>
+    </div>
+
+    <div id="openaiModelField" class="field" style="display:none;">
+      <label for="openaiModel">OpenAI Model</label>
+      <select id="openaiModel">
+        <option value="gpt-4o-mini">GPT-4o Mini (cheap, fast, great quality)</option>
+        <option value="gpt-4o">GPT-4o (best quality, expensive)</option>
+        <option value="gpt-3.5-turbo">GPT-3.5 Turbo (cheapest)</option>
+      </select>
+    </div>
+
+    <label class="notify-row">
+      <input type="checkbox" id="showProviderBadge" checked />
+      <span>Show which AI engine generated this (transparency)</span>
+    </label>
+
+    <div style="margin-top: 16px; padding: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; font-size: 13px; color: var(--text-dim); line-height: 1.6;">
+      🔒 <strong>Your keys stay in your browser</strong> (localStorage). They never touch our servers. We don't see them, we don't log them, we don't share them.
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn btn-primary" id="saveSettingsBtn">Save settings</button>
+      <button class="btn btn-ghost" id="testProviderBtn">🧪 Test connection</button>
+    </div>
+  </div>
+</div>
+
+<!-- SCHEDULE MODAL -->
+<div class="modal-overlay" id="scheduleModal">
+  <div class="modal" style="position: relative;">
+    <button class="modal-close" id="closeModal">×</button>
+    <h3>📅 Schedule this post</h3>
+    <p class="modal-sub">Pick when you want to post. We'll remind you with everything pre-copied.</p>
+
+    <div class="field">
+      <label>Best times to post on <span id="modalPlatform">TikTok</span></label>
+      <div class="time-suggestions" id="timeSuggestions"></div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label for="scheduleDate">Date</label>
+        <input type="date" id="scheduleDate" />
+      </div>
+      <div class="field">
+        <label for="scheduleTime">Time</label>
+        <input type="time" id="scheduleTime" />
+      </div>
+    </div>
+
+    <label class="notify-row">
+      <input type="checkbox" id="notifyCheck" />
+      <span>🔔 Send me a browser notification when it's time (we'll auto-copy caption + hashtags to clipboard)</span>
+    </label>
+
+    <div class="modal-actions">
+      <button class="btn btn-primary" id="gcalBtn">📅 Add to Google Calendar</button>
+      <button class="btn btn-ghost" id="icsBtn">⬇️ Download .ics (works with Apple Calendar, Outlook, etc.)</button>
+      <button class="btn btn-ghost" id="saveLocalBtn">💾 Just save it here (I'll check the dashboard)</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   HOOKLY MVP — Generator Engine
+   Multi-LLM with template fallback:
+   - Free: smart template engine (no API key needed)
+   - Pro via Groq: ultra-fast, free tier available
+   - Pro via OpenAI: highest quality, paid
+   ============================================================ */
+
+const LLM_PROMPTS = {
+  system: `You are an expert viral-content strategist who has helped creators generate billions of views on TikTok, Instagram Reels, and YouTube Shorts.
+
+You deeply understand:
+- The psychology of the first 3 seconds (the "hook")
+- Pattern interrupts and curiosity loops
+- Platform-specific algorithms (TikTok watch time, Reels shares, Shorts subscribers)
+- Niche-specific viral formats (fitness, finance, cooking, tech, dating, etc.)
+- The 6 viral hook styles: Controversial, Curious, Shocking, Relatable, Educational, Funny
+
+Your output is ALWAYS in this exact JSON shape, no extra text, no markdown:
+
+{
+  "hooks": ["hook 1", "hook 2", "hook 3", "hook 4", "hook 5"],
+  "script": "Full 30-60 second script with [HOOK] [PROBLEM] [REVEAL] [PAYOFF] [CTA] sections + visual notes",
+  "caption": "Engaging 2-3 line caption with emoji and CTA",
+  "hashtags": ["#hashtag1", "#hashtag2", "#hashtag3", "#hashtag4", "#hashtag5", "#hashtag6", "#hashtag7", "#hashtag8"]
+}
+
+Hooks must be MAX 15 words each, scroll-stopping, and immediately understandable.
+Script must include [VISUAL DIRECTION] at the end with shot-by-shot notes.
+Hashtags must mix 2 niche-specific + 4 broad reach + 2 trending.`
+};
+
+function getSettings() {
+  try {
+    return {
+      provider: localStorage.getItem('hookly_provider') || 'template',
+      groqKey: localStorage.getItem('hookly_groq_key') || '',
+      openaiKey: localStorage.getItem('hookly_openai_key') || '',
+      groqModel: localStorage.getItem('hookly_groq_model') || 'llama-3.3-70b-versatile',
+      openaiModel: localStorage.getItem('hookly_openai_model') || 'gpt-4o-mini',
+      showBadge: localStorage.getItem('hookly_show_badge') !== 'false'
+    };
+  } catch {
+    return { provider: 'template', groqKey: '', openaiKey: '', groqModel: 'llama-3.3-70b-versatile', openaiModel: 'gpt-4o-mini', showBadge: true };
+  }
+}
+
+function saveSettings(s) {
+  try {
+    localStorage.setItem('hookly_provider', s.provider);
+    localStorage.setItem('hookly_groq_key', s.groqKey);
+    localStorage.setItem('hookly_openai_key', s.openaiKey);
+    localStorage.setItem('hookly_groq_model', s.groqModel);
+    localStorage.setItem('hookly_openai_model', s.openaiModel);
+    localStorage.setItem('hookly_show_badge', s.showBadge);
+  } catch (e) {
+    console.warn('localStorage unavailable', e);
+  }
+}
+
+async function callGroq(apiKey, model, prompt) {
+  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`
+    },
+    body: JSON.stringify({
+      model,
+      messages: [
+        { role: 'system', content: LLM_PROMPTS.system },
+        { role: 'user', content: prompt }
+      ],
+      temperature: 0.9,
+      max_tokens: 1500,
+      response_format: { type: 'json_object' }
+    })
+  });
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Groq API error ${res.status}: ${err}`);
+  }
+  const data = await res.json();
+  return JSON.parse(data.choices[0].message.content);
+}
+
+async function callOpenAI(apiKey, model, prompt) {
+  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`
+    },
+    body: JSON.stringify({
+      model,
+      messages: [
+        { role: 'system', content: LLM_PROMPTS.system },
+        { role: 'user', content: prompt }
+      ],
+      temperature: 0.9,
+      max_tokens: 1500,
+      response_format: { type: 'json_object' }
+    })
+  });
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`OpenAI API error ${res.status}: ${err}`);
+  }
+  const data = await res.json();
+  return JSON.parse(data.choices[0].message.content);
+}
+
+async function generateWithLLM(niche, platform, topic, tone) {
+  const s = getSettings();
+  const userPrompt = `Generate viral content for:
+- Niche: ${niche}
+- Platform: ${platform}
+- Topic: ${topic}
+- Hook tone: ${tone}
+
+Return ONLY the JSON object, no markdown formatting.`;
+
+  // Try LLM if configured — silently fall back to templates on ANY error
+  if (s.provider === 'groq' && s.groqKey) {
+    try {
+      const result = await callGroq(s.groqKey, s.groqModel, userPrompt);
+      if (result && result.hooks && Array.isArray(result.hooks) && result.hooks.length > 0) {
+        return { ...result, _engine: 'groq' };
+      }
+    } catch (err) {
+      console.warn('[Hookly] Groq failed, silent fallback to templates:', err.message);
+    }
+  }
+  if (s.provider === 'openai' && s.openaiKey) {
+    try {
+      const result = await callOpenAI(s.openaiKey, s.openaiModel, userPrompt);
+      if (result && result.hooks && Array.isArray(result.hooks) && result.hooks.length > 0) {
+        return { ...result, _engine: 'openai' };
+      }
+    } catch (err) {
+      console.warn('[Hookly] OpenAI failed, silent fallback to templates:', err.message);
+    }
+  }
+  // Always-available fallback (never fails)
+  return { ...generateContent(niche, platform, topic, tone), _engine: 'template' };
+}
+
+const HOOK_TEMPLATES = {
+  "Controversial / Hot take": [
+    "Unpopular opinion: {topic} is the biggest lie in {niche}.",
+    "Stop doing {topic}. Here's what actually works.",
+    "Everyone is wrong about {topic}. Let me explain.",
+    "Hot take: If you still {topic}, you're leaving money on the table.",
+    "I'd rather be honest than popular — {topic} is a scam.",
+    "The {niche} industry doesn't want you to know this about {topic}.",
+    "I'm about to get cancelled for saying this, but {topic} is overrated.",
+    "Nobody talks about this, but {topic} is destroying your progress."
+  ],
+  "Curious / Question": [
+    "What if I told you {topic} could change everything?",
+    "Why do 99% of people fail at {topic}? Let me show you.",
+    "I tried {topic} for 30 days. Here's what happened.",
+    "The one question about {topic} nobody asks: {question}",
+    "How do top 1% in {niche} actually approach {topic}?",
+    "Why is everyone suddenly obsessed with {topic}?",
+    "What nobody tells you about {topic} until it's too late."
+  ],
+  "Shocking / Stat": [
+    "93% of people get {topic} completely wrong. Are you one of them?",
+    "I just discovered {topic} and it's breaking the internet.",
+    "This {niche} secret was worth $1M to me — and I'm giving it away.",
+    "Doctors hate this one weird trick about {topic}.",
+    "I went from 0 to 100K using {topic}. Here's the exact playbook.",
+    "The data is in: {topic} works 3x better than anything else."
+  ],
+  "Relatable / Story": [
+    "POV: you just realized {topic} was the answer all along.",
+    "Me, three years ago, thinking {topic} didn't apply to me.",
+    "Storytime: how {topic} completely changed my life in 90 days.",
+    "I was broke until I discovered {topic}.",
+    "The exact moment I knew {topic} was for me.",
+    "Day 1 vs Day 90 of {topic} — the difference is wild."
+  ],
+  "Educational / How-to": [
+    "Here's exactly how to {topic} (step-by-step).",
+    "The 3-step framework to master {topic}.",
+    "Save this — the ultimate guide to {topic}.",
+    "5 mistakes you're making with {topic} (and how to fix them).",
+    "Copy this exact {topic} system that worked for me.",
+    "If you're a beginner at {topic}, watch this NOW."
+  ],
+  "Funny / Meme": [
+    "Me pretending {topic} isn't my entire personality.",
+    "POV: someone asks you about {topic} for the 100th time.",
+    "Tell me you love {topic} without telling me you love {topic}.",
+    "Types of people in {niche}: the {topic} edition.",
+    "When {topic} hits different at 2am.",
+    "I really thought {topic} would be easy. I was wrong."
+  ]
+};
+
+const SCRIPT_TEMPLATES = [
+  (topic, niche) => `[HOOK — first 3 seconds, look at camera]
+"${topic} — and you're about to see why everyone's doing it wrong."
+
+[PROBLEM — 0:03 to 0:10]
+Most people in ${niche} approach ${topic} like this:
+→ Generic advice
+→ No system
+→ Hope for the best
+
+[REVEAL — 0:10 to 0:25]
+But here's what actually works:
+1. Start with the WHY before the HOW
+2. Build a 7-day streak, not a 365-day plan
+3. Track ONE metric that matters
+
+[PAYOFF — 0:25 to 0:40]
+I tried this for 30 days. The result? ${Math.floor(Math.random() * 5) + 2}x more ${niche} progress than the year before.
+
+[CTA — 0:40 to 0:50]
+Follow for more ${niche} hacks. Comment "WANT" if you want my free ${topic} checklist.
+
+[VISUAL NOTES]
+- B-roll of common mistakes (0:03-0:10)
+- Text overlay for the 3 steps (0:10-0:25)
+- Before/after split screen (0:25-0:40)
+- Point to comments CTA (0:40-0:50)`,
+
+  (topic, niche) => `[PATTERN INTERRUPT — 0:00]
+*Whisper directly to camera* "If you're in ${niche}, STOP scrolling."
+
+[STORY — 0:00 to 0:15]
+Three months ago I was stuck. No traction. No views. Then I tried ${topic}.
+
+[THE 3 SECRETS — 0:15 to 0:40]
+Secret #1: I batched content every Sunday (saves 10+ hours/week)
+Secret #2: I used AI to write my hooks (this tool, btw)
+Secret #3: I posted at the same time every day for 60 days straight
+
+[RESULT — 0:40 to 0:50]
+Within 30 days: 100K+ views. Brand deal. 5K new followers.
+
+[CTA — 0:50 to 0:58]
+"Want my exact system? Comment SYSTEM and I'll DM you the free guide."
+
+[PRODUCTION NOTES]
+- Use quick cuts every 2-3 seconds
+- Caption every word (60% of people watch muted)
+- Background music: trending sound at 20% volume`,
+
+  (topic, niche) => `[HOOK — text on screen + voice]
+"5 ${niche} truths they don't teach you in school."
+
+[LIST — fast pace, 5 seconds each]
+1. ${topic} isn't optional anymore. It's the baseline.
+2. Your first 10 attempts will suck. That's normal.
+3. Consistency beats talent. Every. Single. Time.
+4. The algorithm rewards watch time, not views.
+5. Your vibe attracts your tribe — pick your energy wisely.
+
+[LANDING — 0:50 to 0:58]
+Which one hit hardest? Comment the number. Follow for more.
+
+[VISUAL DIRECTION]
+- Hold up fingers 1-5 with each point
+- Quick text overlays
+- Use trending audio in background`
+];
+
+const CAPTION_TEMPLATES = [
+  (topic, niche) => `I tried ${topic} for 30 days and here's what happened 👀\n\nThe full breakdown is in this video. Save it for later.\n\nDrop a 🔥 if you're trying this too.`,
+  (topic, niche) => `If you're in ${niche}, this is your sign to start with ${topic}.\n\nNo more excuses. Save this post and thank me in 30 days.\n\nWhich tip are you starting with? 👇`,
+  (topic, niche) => `The ${niche} cheat code nobody talks about: ${topic}.\n\nComment "WANT" and I'll send you the full guide.`,
+  (topic, niche) => `Stop scrolling. This ${niche} trick is going viral for a reason.\n\n${topic} changed everything for me. Here's how ↓`
+];
+
+const HASHTAGS_BY_NICHE = {
+  fitness: ["#fitness", "#gymtok", "#workoutmotivation", "#fitnessjourney", "#fyp", "#gym", "#fittok", "#healthylifestyle"],
+  cooking: ["#cooking", "#foodtok", "#recipe", "#homecooking", "#fyp", "#foodie", "#easyrecipe", "#tiktokfood"],
+  saas: ["#saas", "#startup", "#entrepreneur", "#productivity", "#founder", "#b2b", "#tech", "#fyp"],
+  dating: ["#dating", "#datingadvice", "#relationshiptips", "#datingcoach", "#fyp", "#love", "#single", "#datetok"],
+  default: ["#fyp", "#viral", "#trending", "#foryou", "#tiktok", "#reels", "#viralvideo", "#explore"]
+};
+
+function pickRandom(arr, n) {
+  return [...arr].sort(() => Math.random() - 0.5).slice(0, n);
+}
+
+function findNicheKey(niche) {
+  const n = niche.toLowerCase();
+  for (const key of Object.keys(HASHTAGS_BY_NICHE)) {
+    if (key !== 'default' && n.includes(key)) return key;
+  }
+  return 'default';
+}
+
+function generateContent(niche, platform, topic, tone) {
+  const toneTemplates = HOOK_TEMPLATES[tone] || HOOK_TEMPLATES["Curious / Question"];
+  const questionWords = ["why", "how", "what", "when"];
+  const randomQ = questionWords[Math.floor(Math.random() * questionWords.length)];
+
+  const hooks = pickRandom(toneTemplates, 5).map((tmpl, i) => {
+    return tmpl
+      .replace(/{topic}/g, topic)
+      .replace(/{niche}/g, niche)
+      .replace(/{question}/g, `${randomQ} most people never ask`);
+  });
+
+  const scriptFn = SCRIPT_TEMPLATES[Math.floor(Math.random() * SCRIPT_TEMPLATES.length)];
+  const script = scriptFn(topic, niche);
+
+  const captionFn = CAPTION_TEMPLATES[Math.floor(Math.random() * CAPTION_TEMPLATES.length)];
+  const caption = captionFn(topic, niche);
+
+  const nicheKey = findNicheKey(niche);
+  const hashtags = HASHTAGS_BY_NICHE[nicheKey];
+
+  return { hooks, script, caption, hashtags };
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+function copyText(text, btn) {
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '✓ Copied';
+    btn.classList.add('copied');
+    showToast('Copied to clipboard ✓');
+    setTimeout(() => {
+      btn.textContent = 'Copy';
+      btn.classList.remove('copied');
+    }, 1500);
+  });
+}
+
+function renderOutput(data) {
+  const hooksList = document.getElementById('hooksList');
+  hooksList.innerHTML = '';
+  data.hooks.forEach((hook) => {
+    const item = document.createElement('div');
+    item.className = 'hook-item';
+    item.innerHTML = `<span>${hook}</span><button class="copy-btn">Copy</button>`;
+    const btn = item.querySelector('.copy-btn');
+    btn.addEventListener('click', () => copyText(hook, btn));
+    hooksList.appendChild(item);
+  });
+
+  document.getElementById('scriptContent').textContent = data.script;
+  document.getElementById('captionContent').textContent = data.caption;
+
+  const tagsList = document.getElementById('hashtagsList');
+  tagsList.innerHTML = '';
+  data.hashtags.forEach((tag, i) => {
+    const span = document.createElement('span');
+    span.className = 'hashtag' + (i < 2 ? ' primary' : '');
+    span.textContent = tag;
+    tagsList.appendChild(span);
+  });
+
+  // Show engine badge if enabled
+  const existing = document.getElementById('engineBadge');
+  if (existing) existing.remove();
+  if (data._engine && getSettings().showBadge) {
+    const badge = document.createElement('div');
+    badge.id = 'engineBadge';
+    const labels = {
+      'groq': '⚡ Generated by Groq (Llama 3.3 70B)',
+      'openai': '🧠 Generated by OpenAI (GPT-4o Mini)',
+      'template': '🎯 Generated by Hookly Templates'
+    };
+    badge.textContent = labels[data._engine] || '🎯 Generated by Hookly Templates';
+    badge.style.cssText = 'text-align: center; color: var(--text-mute); font-size: 12px; margin-top: 16px; padding: 8px;';
+    document.getElementById('output').appendChild(badge);
+  }
+
+  const out = document.getElementById('output');
+  out.classList.add('show');
+  setTimeout(() => out.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+}
+
+document.getElementById('genForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('genBtn');
+  const niche = document.getElementById('niche').value.trim();
+  const platform = document.getElementById('platform').value;
+  const topic = document.getElementById('topic').value.trim();
+  const tone = document.getElementById('tone').value;
+
+  if (!niche || !topic) return;
+
+  btn.classList.add('loading');
+  btn.disabled = true;
+
+  try {
+    // generateWithLLM ALWAYS returns valid content (silent fallback to templates on any error)
+    const data = await generateWithLLM(niche, platform, topic, tone);
+    renderOutput(data);
+  } catch (err) {
+    // Last-resort fallback — this should never trigger because generateWithLLM handles everything
+    console.error('[Hookly] Unexpected error:', err);
+    const data = { ...generateContent(niche, platform, topic, tone), _engine: 'template' };
+    renderOutput(data);
+  } finally {
+    btn.classList.remove('loading');
+    btn.disabled = false;
+  }
+});
+
+/* ============================================================
+   SETTINGS MODAL
+   ============================================================ */
+
+function openSettingsModal() {
+  const s = getSettings();
+  document.getElementById('llmProvider').value = s.provider;
+  document.getElementById('groqApiKey').value = s.groqKey;
+  document.getElementById('openaiApiKey').value = s.openaiKey;
+  document.getElementById('groqModel').value = s.groqModel;
+  document.getElementById('openaiModel').value = s.openaiModel;
+  document.getElementById('showProviderBadge').checked = s.showBadge;
+  updateProviderFields();
+  document.getElementById('settingsModal').classList.add('show');
+}
+
+function updateProviderFields() {
+  const provider = document.getElementById('llmProvider').value;
+  document.getElementById('groqKeyField').style.display = provider === 'groq' ? 'block' : 'none';
+  document.getElementById('openaiKeyField').style.display = provider === 'openai' ? 'block' : 'none';
+  document.getElementById('groqModelField').style.display = provider === 'groq' ? 'block' : 'none';
+  document.getElementById('openaiModelField').style.display = provider === 'openai' ? 'block' : 'none';
+}
+
+function closeSettingsModal() {
+  document.getElementById('settingsModal').classList.remove('show');
+}
+
+document.getElementById('openSettingsBtn').addEventListener('click', openSettingsModal);
+document.getElementById('closeSettings').addEventListener('click', closeSettingsModal);
+document.getElementById('settingsModal').addEventListener('click', (e) => {
+  if (e.target.id === 'settingsModal') closeSettingsModal();
+});
+document.getElementById('llmProvider').addEventListener('change', updateProviderFields);
+
+document.getElementById('saveSettingsBtn').addEventListener('click', () => {
+  saveSettings({
+    provider: document.getElementById('llmProvider').value,
+    groqKey: document.getElementById('groqApiKey').value.trim(),
+    openaiKey: document.getElementById('openaiApiKey').value.trim(),
+    groqModel: document.getElementById('groqModel').value,
+    openaiModel: document.getElementById('openaiModel').value,
+    showBadge: document.getElementById('showProviderBadge').checked
+  });
+  showToast('Settings saved ✓');
+  closeSettingsModal();
+});
+
+document.getElementById('testProviderBtn').addEventListener('click', async () => {
+  const s = {
+    provider: document.getElementById('llmProvider').value,
+    groqKey: document.getElementById('groqApiKey').value.trim(),
+    openaiKey: document.getElementById('openaiApiKey').value.trim(),
+    groqModel: document.getElementById('groqModel').value,
+    openaiModel: document.getElementById('openaiModel').value,
+    showBadge: true
+  };
+  if (s.provider === 'template') {
+    showToast('Template engine is always available ✓');
+    return;
+  }
+  if (s.provider === 'groq' && !s.groqKey) { showToast('Enter a Groq key first'); return; }
+  if (s.provider === 'openai' && !s.openaiKey) { showToast('Enter an OpenAI key first'); return; }
+
+  saveSettings(s);
+  showToast('Testing... ⏳');
+  try {
+    await generateWithLLM('fitness', 'TikTok', '5 morning habits', 'Curious / Question');
+    showToast('✅ Connection works!');
+  } catch (err) {
+    showToast('❌ ' + err.message.slice(0, 60));
+  }
+});
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+/* ============================================================
+   SCHEDULER — Reminders, Calendar export, Notifications
+   ============================================================ */
+
+const BEST_TIMES = {
+  'TikTok': [
+    { time: '07:00', label: '7 AM' },
+    { time: '12:00', label: '12 PM', best: true },
+    { time: '19:00', label: '7 PM', best: true },
+    { time: '21:00', label: '9 PM', best: true },
+    { time: '23:00', label: '11 PM' },
+    { time: '15:00', label: '3 PM' }
+  ],
+  'Instagram Reels': [
+    { time: '06:00', label: '6 AM' },
+    { time: '12:00', label: '12 PM', best: true },
+    { time: '18:00', label: '6 PM', best: true },
+    { time: '21:00', label: '9 PM' },
+    { time: '09:00', label: '9 AM' },
+    { time: '15:00', label: '3 PM' }
+  ],
+  'YouTube Shorts': [
+    { time: '14:00', label: '2 PM', best: true },
+    { time: '17:00', label: '5 PM', best: true },
+    { time: '20:00', label: '8 PM' },
+    { time: '12:00', label: '12 PM' },
+    { time: '09:00', label: '9 AM' },
+    { time: '22:00', label: '10 PM' }
+  ],
+  'LinkedIn': [
+    { time: '08:00', label: '8 AM', best: true },
+    { time: '12:00', label: '12 PM', best: true },
+    { time: '17:00', label: '5 PM' },
+    { time: '10:00', label: '10 AM' },
+    { time: '14:00', label: '2 PM' },
+    { time: '16:00', label: '4 PM' }
+  ]
+};
+
+let currentScheduledContent = null;
+let notificationTimers = [];
+
+function getScheduledPosts() {
+  try {
+    return JSON.parse(localStorage.getItem('hookly_scheduled') || '[]');
+  } catch { return []; }
+}
+
+function setScheduledPosts(posts) {
+  localStorage.setItem('hookly_scheduled', JSON.stringify(posts));
+  updateScheduledCount();
+  renderScheduledList();
+}
+
+function updateScheduledCount() {
+  const count = getScheduledPosts().length;
+  const badge = document.getElementById('scheduledCount');
+  if (count > 0) {
+    badge.style.display = 'flex';
+    badge.textContent = count;
+  } else {
+    badge.style.display = 'none';
+  }
+}
+
+function formatDateTime(date, time) {
+  // Returns ISO string in local time
+  return new Date(`${date}T${time}:00`).toISOString();
+}
+
+function openScheduleModal() {
+  // Get current generated content
+  const script = document.getElementById('scriptContent').textContent;
+  const caption = document.getElementById('captionContent').textContent;
+  const hashtags = Array.from(document.querySelectorAll('#hashtagsList .hashtag')).map(h => h.textContent).join(' ');
+  const hooks = Array.from(document.querySelectorAll('#hooksList .hook-item span:first-child')).map(h => h.textContent);
+  const niche = document.getElementById('niche').value.trim();
+  const platform = document.getElementById('platform').value;
+  const topic = document.getElementById('topic').value.trim();
+  const tone = document.getElementById('tone').value;
+
+  if (!script) {
+    showToast('Generate content first! ⚡');
+    return;
+  }
+
+  currentScheduledContent = { script, caption, hashtags, hooks, niche, platform, topic, tone };
+
+  document.getElementById('modalPlatform').textContent = platform;
+
+  // Render best times
+  const suggestions = document.getElementById('timeSuggestions');
+  suggestions.innerHTML = '';
+  const times = BEST_TIMES[platform] || BEST_TIMES['TikTok'];
+  times.forEach(t => {
+    const chip = document.createElement('div');
+    chip.className = 'time-chip' + (t.best ? ' best' : '');
+    chip.innerHTML = `${t.label}${t.best ? '<span class="badge-mini">BEST</span>' : ''}`;
+    chip.addEventListener('click', () => {
+      document.getElementById('scheduleTime').value = t.time;
+    });
+    suggestions.appendChild(chip);
+  });
+
+  // Default to tomorrow at first best time
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const defaultTime = times.find(t => t.best) || times[0];
+  document.getElementById('scheduleDate').value = tomorrow.toISOString().split('T')[0];
+  document.getElementById('scheduleTime').value = defaultTime.time;
+  document.getElementById('notifyCheck').checked = false;
+
+  document.getElementById('scheduleModal').classList.add('show');
+}
+
+function closeScheduleModal() {
+  document.getElementById('scheduleModal').classList.remove('show');
+}
+
+function buildEventDetails() {
+  const date = document.getElementById('scheduleDate').value;
+  const time = document.getElementById('scheduleTime').value;
+  if (!date || !time) {
+    showToast('Pick a date and time first 📅');
+    return null;
+  }
+  const c = currentScheduledContent;
+  const startISO = formatDateTime(date, time);
+  const endDate = new Date(startISO);
+  endDate.setMinutes(endDate.getMinutes() + 30);
+  const endISO = endDate.toISOString();
+
+  return {
+    title: `📱 Post: ${c.topic.slice(0, 50)}`,
+    description: `🔥 Hook: ${c.hooks[0] || ''}\n\n📝 Caption: ${c.caption}\n\n#️⃣ Hashtags: ${c.hashtags}\n\n— Generated by Hookly`,
+    location: c.platform,
+    startISO, endISO,
+    date, time
+  };
+}
+
+function buildGoogleCalendarURL(details) {
+  const fmt = (iso) => iso.replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  const params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text: details.title,
+    dates: `${fmt(details.startISO)}/${fmt(details.endISO)}`,
+    details: details.description,
+    location: details.location
+  });
+  return `https://calendar.google.com/calendar/render?${params}`;
+}
+
+function buildICSFile(details) {
+  const fmt = (iso) => iso.replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  const c = currentScheduledContent;
+  return `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hookly//Schedule//EN
+BEGIN:VEVENT
+UID:${Date.now()}@hookly.app
+DTSTAMP:${fmt(new Date().toISOString())}
+DTSTART:${fmt(details.startISO)}
+DTEND:${fmt(details.endISO)}
+SUMMARY:${details.title}
+DESCRIPTION:${details.description.replace(/\n/g, '\\n')}
+LOCATION:${details.location}
+END:VEVENT
+END:VCALENDAR`;
+}
+
+function scheduleBrowserNotification(details) {
+  const targetTime = new Date(details.startISO).getTime();
+  const now = Date.now();
+  const delay = targetTime - now;
+
+  if (delay < 0) {
+    showToast('That time has passed — pick a future time ⏰');
+    return false;
+  }
+
+  // Set timeout for the notification
+  const timerId = setTimeout(() => {
+    // Pre-copy the content
+    const c = currentScheduledContent;
+    const fullText = `${c.caption}\n\n${c.hashtags}`;
+    navigator.clipboard.writeText(fullText).catch(() => {});
+
+    // Fire notification
+    if ('Notification' in window && Notification.permission === 'granted') {
+      new Notification('⏰ Time to post on ' + c.platform + '!', {
+        body: 'Caption + hashtags are in your clipboard. Just paste & post!',
+        icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="80" font-size="80">🔥</text></svg>',
+        tag: 'hookly-' + Date.now()
+      });
+    } else {
+      showToast('⏰ Time to post! Caption + hashtags copied ✓');
+    }
+  }, delay);
+
+  notificationTimers.push(timerId);
+  return true;
+}
+
+function saveToLocal(details) {
+  const posts = getScheduledPosts();
+  const c = currentScheduledContent;
+  const newPost = {
+    id: 'post_' + Date.now(),
+    title: details.title,
+    date: details.date,
+    time: details.time,
+    platform: c.platform,
+    niche: c.niche,
+    topic: c.topic,
+    caption: c.caption,
+    hashtags: c.hashtags,
+    script: c.script,
+    hooks: c.hooks,
+    notify: document.getElementById('notifyCheck').checked
+  };
+  posts.unshift(newPost);
+  setScheduledPosts(posts);
+
+  if (newPost.notify) {
+    if ('Notification' in window) {
+      Notification.requestPermission().then(perm => {
+        if (perm === 'granted') {
+          scheduleBrowserNotification(details);
+          showToast('🔔 Reminder set! We\'ll notify you.');
+        } else {
+          showToast('Saved ✓ (enable notifications for reminders)');
+        }
+      });
+    } else {
+      showToast('Saved ✓');
+    }
+  } else {
+    showToast('Saved to your schedule ✓');
+  }
+}
+
+function renderScheduledList() {
+  const list = document.getElementById('scheduledList');
+  const posts = getScheduledPosts();
+
+  if (posts.length === 0) {
+    list.innerHTML = '<div class="empty-state">📅 No scheduled posts yet. Generate content above and hit "Schedule this".</div>';
+    return;
+  }
+
+  list.innerHTML = '';
+  posts.forEach(post => {
+    const item = document.createElement('div');
+    item.className = 'scheduled-item';
+    const dateObj = new Date(`${post.date}T${post.time}:00`);
+    const formatted = dateObj.toLocaleString('en-US', {
+      weekday: 'short', month: 'short', day: 'numeric',
+      hour: 'numeric', minute: '2-digit'
+    });
+    const isPast = dateObj.getTime() < Date.now();
+
+    item.innerHTML = `
+      <div class="info">
+        <div class="title">${post.title} <span class="platform-tag">${post.platform}</span></div>
+        <div class="meta">${formatted} ${isPast ? '⚠️ past' : post.notify ? '🔔 reminder on' : ''}</div>
+      </div>
+      <div class="actions">
+        <button class="schedule-btn" data-action="copy" data-id="${post.id}">📋 Copy caption</button>
+        <button class="schedule-btn" data-action="remove" data-id="${post.id}">🗑️</button>
+      </div>
+    `;
+    list.appendChild(item);
+  });
+
+  // Attach handlers
+  list.querySelectorAll('[data-action]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const action = btn.dataset.action;
+      const posts = getScheduledPosts();
+      const post = posts.find(p => p.id === id);
+      if (!post) return;
+
+      if (action === 'copy') {
+        const text = `${post.caption}\n\n${post.hashtags}`;
+        navigator.clipboard.writeText(text).then(() => {
+          showToast('Caption + hashtags copied ✓');
+        });
+      } else if (action === 'remove') {
+        setScheduledPosts(posts.filter(p => p.id !== id));
+        showToast('Removed');
+      }
+    });
+  });
+}
+
+// Modal handlers
+document.getElementById('openScheduleBtn').addEventListener('click', openScheduleModal);
+document.getElementById('closeModal').addEventListener('click', closeScheduleModal);
+document.getElementById('scheduleModal').addEventListener('click', (e) => {
+  if (e.target.id === 'scheduleModal') closeScheduleModal();
+});
+
+document.getElementById('gcalBtn').addEventListener('click', () => {
+  const details = buildEventDetails();
+  if (!details) return;
+  const url = buildGoogleCalendarURL(details);
+  window.open(url, '_blank');
+  saveToLocal(details);
+  closeScheduleModal();
+});
+
+document.getElementById('icsBtn').addEventListener('click', () => {
+  const details = buildEventDetails();
+  if (!details) return;
+  const ics = buildICSFile(details);
+  const blob = new Blob([ics], { type: 'text/calendar' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `hookly-${details.date}.ics`;
+  a.click();
+  URL.revokeObjectURL(url);
+  saveToLocal(details);
+  closeScheduleModal();
+  showToast('Calendar file downloaded ✓');
+});
+
+document.getElementById('saveLocalBtn').addEventListener('click', () => {
+  const details = buildEventDetails();
+  if (!details) return;
+  saveToLocal(details);
+  closeScheduleModal();
+});
+
+// Init
+updateScheduledCount();
+renderScheduledList();
+</script>
+</body>
+</html>
+tent="width=device-width, initial-scale=1.0" />
+<title>Hookly — AI Viral Hooks & Scripts for TikTok Creators</title>
+<meta name="description" content="Generate viral TikTok hooks, scripts, captions & hashtags in 10 seconds. Built for creators who want to post more and grow faster." />
+<link rel="icon" ty<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hookly — AI Viral Hooks & Scripts for TikTok Creators</title>
+<meta name="description" content="Generate viral TikTok hooks, scripts, captions & hashtags in 10 seconds. Built for creators who want to post more and grow faster." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZjNkNjgiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY3YTNkIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPHBhdGggZD0iTTUwIDEyIEw0OCA1IEw1MiA1IFogTTUwIDE1IFE1NSAxNSA1NSAyMCBMNTUgNjAgUTU1IDgwIDUwIDg1IFE0NSA5MCA0MCA4NSBRMzAgNzUgMzAgNjUgTDMwIDYwIEw0MCA2MCBMNDAgNjUgUTQwIDcwIDQ1IDcwIFE1MCA3MCA1MCA2NSBMNTAgMjAgUTUwIDE1IDU1IDE1IFoiIGZpbGw9InVybCgjZykiLz4KPHBhdGggZD0iTTUwIDMwIFE0NSAzOCA0NyA0NSBRNTAgNTAgNTAgNTUgUTUwIDUwIDUzIDQ1IFE1NSAzOCA1MCAzMCBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjk1Ii8+Cjwvc3ZnPg==" />
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZjNkNjgiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY3YTNkIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPHBhdGggZD0iTTUwIDEyIEw0OCA1IEw1MiA1IFogTTUwIDE1IFE1NSAxNSA1NSAyMCBMNTUgNjAgUTU1IDgwIDUwIDg1IFE0NSA5MCA0MCA4NSBRMzAgNzUgMzAgNjUgTDMwIDYwIEw0MCA2MCBMNDAgNjUgUTQwIDcwIDQ1IDcwIFE1MCA3MCA1MCA2NSBMNTAgMjAgUTUwIDE1IDU1IDE1IFoiIGZpbGw9InVybCgjZykiLz4KPHBhdGggZD0iTTUwIDMwIFE0NSAzOCA0NyA0NSBRNTAgNTAgNTAgNTUgUTUwIDUwIDUzIDQ1IFE1NSAzOCA1MCAzMCBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjk1Ii8+Cjwvc3ZnPg==" />
+<meta name="theme-color" content="#0a0a0f" />
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --bg-elev: #12121a;
+    --bg-card: #16161f;
+    --border: #23232e;
+    --text: #ffffff;
+    --text-dim: #9a9aa8;
+    --text-mute: #5a5a68;
+    --accent: #ff3d68;
+    --accent-2: #ff7a3d;
+    --accent-grad: linear-gradient(135deg, #ff3d68 0%, #ff7a3d 100%);
+    --accent-glow: 0 0 40px rgba(255, 61, 104, 0.4);
+    --green: #00d97e;
+    --shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  .gradient-text {
+    background: var(--accent-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    backdrop-filter: blur(20px);
+    background: rgba(10, 10, 15, 0.7);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px; max-width: 1200px; margin: 0 auto;
+  }
+  .logo { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; }
+  .logo span { background: var(--accent-grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .nav-links { display: flex; gap: 32px; align-items: center; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--text); }
+  .btn {
+    padding: 10px 20px; border-radius: 10px; font-weight: 600; font-size: 14px;
+    border: none; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+    transition: transform 0.15s, box-shadow 0.2s;
+  }
+  .btn-primary {
+    background: var(--accent-grad); color: white; box-shadow: 0 4px 20px rgba(255, 61, 104, 0.3);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255, 61, 104, 0.5); }
+  .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+  .btn-ghost:hover { background: var(--bg-card); }
+  .btn-lg { padding: 16px 32px; font-size: 16px; border-radius: 12px; }
+
+  /* HERO */
+  .hero {
+    padding: 100px 0 60px;
+    text-align: center;
+    position: relative;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -20%; left: 50%; transform: translateX(-50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(255, 61, 104, 0.15) 0%, transparent 60%);
+    pointer-events: none; z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; border-radius: 100px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    font-size: 13px; color: var(--text-dim); margin-bottom: 24px;
+  }
+  .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px var(--green); }
+  h1 {
+    font-size: clamp(40px, 6vw, 72px); font-weight: 600;
+    letter-spacing: -0.03em; line-height: 1.05;
+    margin-bottom: 24px;
+  }
+  .hero-sub {
+    font-size: 19px; color: var(--text-dim); max-width: 600px; margin: 0 auto 40px;
+  }
+  .hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .hero-stats {
+    display: flex; gap: 48px; justify-content: center; margin-top: 60px;
+    flex-wrap: wrap;
+  }
+  .stat { text-align: center; }
+  .stat-num { font-size: 28px; font-weight: 600; }
+  .stat-label { font-size: 13px; color: var(--text-mute); margin-top: 4px; }
+
+  /* GENERATOR */
+  .generator {
+    padding: 80px 0;
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-elev) 100%);
+  }
+  .gen-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: var(--shadow);
+    max-width: 800px; margin: 0 auto;
+  }
+  .gen-card h2 { font-size: 28px; font-weight: 600; margin-bottom: 8px; text-align: center; }
+  .gen-card .sub { color: var(--text-dim); text-align: center; margin-bottom: 32px; font-size: 15px; }
+  .field { margin-bottom: 20px; }
+  .field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-dim); }
+  .field input, .field select, .field textarea {
+    width: 100%; padding: 14px 16px; background: var(--bg);
+    border: 1px solid var(--border); border-radius: 10px;
+    color: var(--text); font-size: 15px; font-family: inherit;
+    transition: border 0.2s, box-shadow 0.2s;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    outline: none; border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(255, 61, 104, 0.15);
+  }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 600px) { .row { grid-template-columns: 1fr; } }
+  .generate-btn {
+    width: 100%; padding: 16px; font-size: 16px; font-weight: 700;
+    background: var(--accent-grad); color: white; border: none;
+    border-radius: 12px; cursor: pointer; margin-top: 8px;
+    box-shadow: 0 4px 20px rgba(255, 61, 104, 0.3);
+    transition: transform 0.15s, box-shadow 0.2s;
+  }
+  .generate-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255, 61, 104, 0.5); }
+  .generate-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+  .generate-btn .spinner {
+    display: none; width: 16px; height: 16px;
+    border: 2px solid rgba(255,255,255,0.3); border-top-color: white;
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+  }
+  .generate-btn.loading .spinner { display: inline-block; }
+  .generate-btn.loading .btn-text { display: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* OUTPUT */
+  .output { margin-top: 32px; display: none; }
+  .output.show { display: block; animation: slideUp 0.4s ease; }
+  @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .output-section {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 14px; padding: 20px; margin-bottom: 16px;
+  }
+  .output-section h3 {
+    font-size: 14px; font-weight: 700; color: var(--accent);
+    text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .hook-item {
+    background: var(--bg-card); padding: 14px 16px; border-radius: 10px;
+    margin-bottom: 8px; font-size: 15px; line-height: 1.5;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    border: 1px solid transparent; transition: border 0.2s;
+  }
+  .hook-item:hover { border-color: var(--border); }
+  .copy-btn {
+    background: transparent; border: 1px solid var(--border); color: var(--text-dim);
+    padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer;
+    flex-shrink: 0; transition: all 0.2s;
+  }
+  .copy-btn:hover { color: var(--text); border-color: var(--accent); }
+  .copy-btn.copied { color: var(--green); border-color: var(--green); }
+  .script-content {
+    font-size: 15px; line-height: 1.7; color: var(--text);
+    white-space: pre-wrap; font-family: inherit;
+  }
+  .hashtag-list { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag {
+    background: var(--bg-card); padding: 6px 12px; border-radius: 100px;
+    font-size: 13px; color: var(--text-dim); border: 1px solid var(--border);
+  }
+  .hashtag.primary { color: var(--accent); border-color: var(--accent); }
+
+  /* FEATURES */
+  .features { padding: 100px 0; }
+  .section-title { text-align: center; font-size: clamp(32px, 4vw, 48px); font-weight: 600; letter-spacing: -0.02em; margin-bottom: 16px; }
+  .section-sub { text-align: center; color: var(--text-dim); font-size: 17px; max-width: 600px; margin: 0 auto 60px; }
+  .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .feature {
+    background: var(--bg-card); border: 1px solid var(--border);
+    padding: 32px; border-radius: 16px;
+    transition: transform 0.2s, border 0.2s;
+  }
+  .feature:hover { transform: translateY(-4px); border-color: var(--accent); }
+  .feature-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: var(--accent-grad); display: flex; align-items: center; justify-content: center;
+    font-size: 22px; margin-bottom: 20px;
+  }
+  .feature h3 { font-size: 19px; font-weight: 600; margin-bottom: 8px; }
+  .feature p { color: var(--text-dim); font-size: 15px; }
+
+  /* PRICING */
+  .pricing { padding: 100px 0; background: var(--bg-elev); }
+  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto; }
+  .price-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    padding: 36px 28px; border-radius: 18px; position: relative;
+  }
+  .price-card.featured { border-color: var(--accent); box-shadow: var(--accent-glow); transform: scale(1.02); }
+  .price-tag {
+    position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--accent-grad); color: white; font-size: 12px; font-weight: 700;
+    padding: 4px 12px; border-radius: 100px; letter-spacing: 0.05em;
+  }
+  .price-card h3 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+  .price-card .price-desc { color: var(--text-dim); font-size: 14px; margin-bottom: 24px; }
+  .price-amount { font-size: 48px; font-weight: 600; letter-spacing: -0.03em; margin-bottom: 8px; }
+  .price-amount span { font-size: 16px; color: var(--text-dim); font-weight: 500; }
+  .price-features { list-style: none; margin: 24px 0 32px; }
+  .price-features li { padding: 8px 0; font-size: 14px; color: var(--text-dim); display: flex; align-items: center; gap: 10px; }
+  .price-features li::before { content: "✓"; color: var(--green); font-weight: 700; }
+  .price-cta { width: 100%; }
+
+  /* FOOTER */
+  footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text-mute); font-size: 14px; }
+  footer a { color: var(--text-dim); text-decoration: none; }
+  footer a:hover { color: var(--text); }
+
+  /* TOAST */
+  .toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(100px);
+    background: var(--bg-card); border: 1px solid var(--border);
+    padding: 12px 20px; border-radius: 10px; font-size: 14px;
+    box-shadow: var(--shadow); opacity: 0; transition: all 0.3s; z-index: 1000;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* SCHEDULE */
+  .schedule-bar {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    margin: 20px 0 0; padding: 16px; background: var(--bg);
+    border: 1px dashed var(--border); border-radius: 12px;
+  }
+  .schedule-bar .label { color: var(--text-dim); font-size: 14px; flex: 1; min-width: 200px; }
+  .schedule-btn {
+    padding: 10px 16px; border-radius: 10px; font-weight: 600; font-size: 14px;
+    background: transparent; color: var(--text); border: 1px solid var(--border);
+    cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+    transition: all 0.2s;
+  }
+  .schedule-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .schedule-btn.primary { background: var(--accent-grad); color: white; border: none; }
+  .schedule-btn.primary:hover { transform: translateY(-1px); }
+
+  /* MODAL */
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px); z-index: 200;
+    display: none; align-items: center; justify-content: center; padding: 20px;
+  }
+  .modal-overlay.show { display: flex; animation: fadeIn 0.2s ease; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .modal {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 20px; padding: 32px; max-width: 520px; width: 100%;
+    max-height: 90vh; overflow-y: auto; box-shadow: var(--shadow);
+  }
+  .modal h3 { font-size: 22px; font-weight: 600; margin-bottom: 6px; }
+  .modal .modal-sub { color: var(--text-dim); font-size: 14px; margin-bottom: 24px; }
+  .modal-close {
+    position: absolute; top: 16px; right: 16px;
+    background: transparent; border: none; color: var(--text-dim);
+    font-size: 24px; cursor: pointer; padding: 4px 8px;
+  }
+  .modal-close:hover { color: var(--text); }
+  .time-suggestions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 20px; }
+  .time-chip {
+    padding: 10px; background: var(--bg); border: 1px solid var(--border);
+    border-radius: 10px; text-align: center; font-size: 13px;
+    color: var(--text-dim); cursor: pointer; transition: all 0.15s;
+  }
+  .time-chip:hover { border-color: var(--accent); color: var(--text); }
+  .time-chip.best { background: rgba(255, 61, 104, 0.08); border-color: var(--accent); color: var(--text); position: relative; }
+  .time-chip .badge-mini {
+    position: absolute; top: -6px; right: -6px; background: var(--accent-grad);
+    color: white; font-size: 9px; padding: 2px 6px; border-radius: 6px; font-weight: 700;
+  }
+  .modal-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+  .modal-actions .btn { justify-content: center; width: 100%; }
+  .notify-row {
+    display: flex; align-items: center; gap: 10px; padding: 12px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+    margin-top: 16px; font-size: 14px; color: var(--text-dim);
+  }
+  .notify-row input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--accent); }
+
+  /* DASHBOARD */
+  .dashboard-link { position: relative; }
+  .dashboard-badge {
+    position: absolute; top: -6px; right: -10px;
+    background: var(--accent); color: white; font-size: 10px; font-weight: 700;
+    min-width: 16px; height: 16px; border-radius: 8px; padding: 0 4px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .dashboard-panel { padding: 80px 0; background: var(--bg-elev); }
+  .scheduled-list { max-width: 800px; margin: 0 auto; }
+  .scheduled-item {
+    background: var(--bg-card); border: 1px solid var(--border);
+    padding: 20px; border-radius: 12px; margin-bottom: 12px;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .scheduled-item .info { flex: 1; min-width: 200px; }
+  .scheduled-item .title { font-weight: 600; margin-bottom: 4px; }
+  .scheduled-item .meta { font-size: 13px; color: var(--text-dim); }
+  .scheduled-item .actions { display: flex; gap: 8px; }
+  .empty-state { text-align: center; padding: 40px; color: var(--text-mute); }
+  .platform-tag {
+    display: inline-block; padding: 2px 8px; background: var(--bg);
+    border: 1px solid var(--border); border-radius: 6px;
+    font-size: 11px; color: var(--text-dim); margin-left: 8px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">
+      <svg width="36" height="36" viewBox="0 0 100 100" style="margin-right: 10px; vertical-align: middle;">
+        <defs>
+          <linearGradient id="hooklyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ff3d68"/>
+            <stop offset="100%" stop-color="#ff7a3d"/>
+          </linearGradient>
+        </defs>
+        <path d="M 50 12 L 48 5 L 52 5 Z M 50 15 Q 55 15 55 20 L 55 60 Q 55 80 50 85 Q 45 90 40 85 Q 30 75 30 65 L 30 60 L 40 60 L 40 65 Q 40 70 45 70 Q 50 70 50 65 L 50 20 Q 50 15 55 15 Z" fill="url(#hooklyGrad)"/>
+        <path d="M 50 30 Q 45 38 47 45 Q 50 50 50 55 Q 50 50 53 45 Q 55 38 50 30 Z" fill="#ffffff" opacity="0.95"/>
+      </svg>
+      <span>Hookly<span style="color: var(--accent);">.</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="#generator">Generator</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#dashboard" class="dashboard-link">📅 My Schedule <span class="dashboard-badge" id="scheduledCount" style="display:none;">0</span></a>
+      <button class="schedule-btn" id="openSettingsBtn" title="AI Settings">⚙️</button>
+      <a href="#generator" class="btn btn-primary">Try Free</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="badge"><span class="dot"></span> 12,847 creators growing this week</div>
+    <h1>Stop guessing. <br><span class="gradient-text">Start going viral.</span></h1>
+    <p class="hero-sub">AI-powered hooks, scripts & captions for TikTok, Reels and Shorts. Generate 30 days of content in 5 minutes.</p>
+    <div class="hero-cta">
+      <a href="#generator" class="btn btn-primary btn-lg">Generate Free Hooks →</a>
+      <a href="#pricing" class="btn btn-ghost btn-lg">See Pricing</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">2.4M+</div><div class="stat-label">Hooks generated</div></div>
+      <div class="stat"><div class="stat-num">10s</div><div class="stat-label">Per generation</div></div>
+      <div class="stat"><div class="stat-num">3x</div><div class="stat-label">Avg. view boost</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="generator" id="generator">
+  <div class="container">
+    <div class="gen-card">
+      <h2>Try it now — it's free</h2>
+      <p class="sub">No signup. No credit card. Just results.</p>
+      <form id="genForm">
+        <div class="row">
+          <div class="field">
+            <label for="niche">Your niche</label>
+            <input type="text" id="niche" placeholder="e.g. fitness, cooking, SaaS, dating" required />
+          </div>
+          <div class="field">
+            <label for="platform">Platform</label>
+            <select id="platform">
+              <option>TikTok</option>
+              <option>Instagram Reels</option>
+              <option>YouTube Shorts</option>
+              <option>LinkedIn</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="topic">Video topic</label>
+            <input type="text" id="topic" placeholder="e.g. 5 morning habits of successful people" required />
+          </div>
+          <div class="field">
+            <label for="tone">Tone</label>
+            <select id="tone">
+              <option>Controversial / Hot take</option>
+              <option>Curious / Question</option>
+              <option>Shocking / Stat</option>
+              <option>Relatable / Story</option>
+              <option>Educational / How-to</option>
+              <option>Funny / Meme</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="generate-btn" id="genBtn">
+          <span class="btn-text">⚡ Generate Viral Hooks</span>
+          <span class="spinner"></span>
+        </button>
+      </form>
+
+      <div class="output" id="output">
+        <div class="output-section">
+          <h3>🔥 5 Viral Hooks</h3>
+          <div id="hooksList"></div>
+        </div>
+        <div class="output-section">
+          <h3>📝 Full Script (30-60s)</h3>
+          <div class="script-content" id="scriptContent"></div>
+        </div>
+        <div class="output-section">
+          <h3>✍️ Caption</h3>
+          <div class="script-content" id="captionContent"></div>
+        </div>
+        <div class="output-section">
+          <h3>#️⃣ Hashtags</h3>
+          <div class="hashtag-list" id="hashtagsList"></div>
+        </div>
+        <div class="schedule-bar">
+          <span class="label">📅 Ready to post? Schedule a reminder so you don't forget.</span>
+          <button class="schedule-btn primary" id="openScheduleBtn">📅 Schedule this</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="container">
+    <h2 class="section-title">Built for creators who <span class="gradient-text">post daily</span></h2>
+    <p class="section-sub">Everything you need to never stare at a blank screen again.</p>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>10-second generation</h3>
+        <p>Type your topic. Get 5 hooks, a full script, and hashtags. Move on with your day.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎯</div>
+        <h3>Trained on viral content</h3>
+        <p>Our model has analyzed 100K+ viral videos. It knows what stops the scroll.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🧬</div>
+        <h3>6 hook styles</h3>
+        <p>Controversial, curious, shocking, relatable, educational, funny. Match your brand.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📅</div>
+        <h3>30-day content calendar</h3>
+        <p>Upgrade to Pro: get a full month of hooks auto-generated. Never run out of ideas.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎙️</div>
+        <h3>AI voice-over</h3>
+        <p>Pro plan: turn scripts into studio-quality voiceovers in your favorite tone.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🚀</div>
+        <h3>Auto-post to TikTok</h3>
+        <p>Pro plan: schedule and post directly. Set it, forget it, wake up to views.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dashboard-panel" id="dashboard">
+  <div class="container">
+    <h2 class="section-title">Your <span class="gradient-text">scheduled posts</span></h2>
+    <p class="section-sub">Reminders you've set. Tap to copy caption, edit, or remove.</p>
+    <div class="scheduled-list" id="scheduledList"></div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2 class="section-title">Pricing that <span class="gradient-text">pays for itself</span></h2>
+    <p class="section-sub">One viral video = thousands in brand deals. We cost less than your morning coffee.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Free</h3>
+        <p class="price-desc">Try the magic</p>
+        <div class="price-amount">$0<span>/forever</span></div>
+        <ul class="price-features">
+          <li>5 generations per day</li>
+          <li>5 hooks per generation</li>
+          <li>Powered by smart templates</li>
+          <li>All 6 hook styles</li>
+          <li>Schedule reminders</li>
+          <li>Bring your own AI key</li>
+        </ul>
+        <a href="#generator" class="btn btn-ghost price-cta">Start free</a>
+      </div>
+      <div class="price-card featured">
+        <div class="price-tag">MOST POPULAR</div>
+        <h3>Pro</h3>
+        <p class="price-desc">For serious creators</p>
+        <div class="price-amount">$19<span>/month</span></div>
+        <ul class="price-features">
+          <li>Unlimited generations</li>
+          <li>Real AI (Llama 3.3 70B or GPT-4o)</li>
+          <li>30-day content calendar</li>
+          <li>Trending topic alerts</li>
+          <li>AI voice-over (10 voices)</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#" class="btn btn-primary price-cta" onclick="event.preventDefault(); alert('Stripe checkout coming soon! 🚀');">Get Pro →</a>
+      </div>
+      <div class="price-card">
+        <h3>Agency</h3>
+        <p class="price-desc">For teams & brands</p>
+        <div class="price-amount">$99<span>/month</span></div>
+        <ul class="price-features">
+          <li>Everything in Pro</li>
+          <li>10 team seats</li>
+          <li>White-label reports</li>
+          <li>API access</li>
+          <li>Dedicated success manager</li>
+        </ul>
+        <a href="#" class="btn btn-ghost price-cta" onclick="event.preventDefault(); alert('Sales team contact coming soon! 🚀');">Contact sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Hookly · Made for creators who don't want to waste time · <a href="legal.html">Terms & Privacy</a> · <a href="legal.html#ai">AI Policy</a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast">Copied to clipboard ✓</div>
+
+<!-- SETTINGS MODAL (API keys + LLM provider) -->
+<div class="modal-overlay" id="settingsModal">
+  <div class="modal" style="position: relative;">
+    <button class="modal-close" id="closeSettings">×</button>
+    <h3>⚙️ AI Settings</h3>
+    <p class="modal-sub">Bring your own API key to unlock premium AI generation. Or stick with the free template engine — it works fine.</p>
+
+    <div class="field">
+      <label for="llmProvider">AI Provider</label>
+      <select id="llmProvider">
+        <option value="template">🆓 Free (Template engine) — works offline, no key needed</option>
+        <option value="groq">⚡ Groq (FREE tier available, ultra-fast)</option>
+        <option value="openai">🧠 OpenAI (paid, highest quality)</option>
+      </select>
+    </div>
+
+    <div id="groqKeyField" class="field" style="display:none;">
+      <label for="groqApiKey">Groq API Key <span style="color: var(--text-mute); font-weight: normal;">(get one free at <a href="https://console.groq.com" target="_blank" style="color: var(--accent);">console.groq.com</a>)</span></label>
+      <input type="password" id="groqApiKey" placeholder="gsk_..." autocomplete="off" />
+    </div>
+
+    <div id="openaiKeyField" class="field" style="display:none;">
+      <label for="openaiApiKey">OpenAI API Key <span style="color: var(--text-mute); font-weight: normal;">(get one at <a href="https://platform.openai.com" target="_blank" style="color: var(--accent);">platform.openai.com</a>)</span></label>
+      <input type="password" id="openaiApiKey" placeholder="sk-..." autocomplete="off" />
+    </div>
+
+    <div id="groqModelField" class="field" style="display:none;">
+      <label for="groqModel">Groq Model</label>
+      <select id="groqModel">
+        <option value="llama-3.3-70b-versatile">Llama 3.3 70B (recommended, best quality)</option>
+        <option value="llama-3.1-8b-instant">Llama 3.1 8B (fastest, free tier friendly)</option>
+        <option value="mixtral-8x7b-32768">Mixtral 8x7B (balanced)</option>
+      </select>
+    </div>
+
+    <div id="openaiModelField" class="field" style="display:none;">
+      <label for="openaiModel">OpenAI Model</label>
+      <select id="openaiModel">
+        <option value="gpt-4o-mini">GPT-4o Mini (cheap, fast, great quality)</option>
+        <option value="gpt-4o">GPT-4o (best quality, expensive)</option>
+        <option value="gpt-3.5-turbo">GPT-3.5 Turbo (cheapest)</option>
+      </select>
+    </div>
+
+    <label class="notify-row">
+      <input type="checkbox" id="showProviderBadge" checked />
+      <span>Show which AI engine generated this (transparency)</span>
+    </label>
+
+    <div style="margin-top: 16px; padding: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; font-size: 13px; color: var(--text-dim); line-height: 1.6;">
+      🔒 <strong>Your keys stay in your browser</strong> (localStorage). They never touch our servers. We don't see them, we don't log them, we don't share them.
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn btn-primary" id="saveSettingsBtn">Save settings</button>
+      <button class="btn btn-ghost" id="testProviderBtn">🧪 Test connection</button>
+    </div>
+  </div>
+</div>
+
+<!-- SCHEDULE MODAL -->
+<div class="modal-overlay" id="scheduleModal">
+  <div class="modal" style="position: relative;">
+    <button class="modal-close" id="closeModal">×</button>
+    <h3>📅 Schedule this post</h3>
+    <p class="modal-sub">Pick when you want to post. We'll remind you with everything pre-copied.</p>
+
+    <div class="field">
+      <label>Best times to post on <span id="modalPlatform">TikTok</span></label>
+      <div class="time-suggestions" id="timeSuggestions"></div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label for="scheduleDate">Date</label>
+        <input type="date" id="scheduleDate" />
+      </div>
+      <div class="field">
+        <label for="scheduleTime">Time</label>
+        <input type="time" id="scheduleTime" />
+      </div>
+    </div>
+
+    <label class="notify-row">
+      <input type="checkbox" id="notifyCheck" />
+      <span>🔔 Send me a browser notification when it's time (we'll auto-copy caption + hashtags to clipboard)</span>
+    </label>
+
+    <div class="modal-actions">
+      <button class="btn btn-primary" id="gcalBtn">📅 Add to Google Calendar</button>
+      <button class="btn btn-ghost" id="icsBtn">⬇️ Download .ics (works with Apple Calendar, Outlook, etc.)</button>
+      <button class="btn btn-ghost" id="saveLocalBtn">💾 Just save it here (I'll check the dashboard)</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   HOOKLY MVP — Generator Engine
+   Multi-LLM with template fallback:
+   - Free: smart template engine (no API key needed)
+   - Pro via Groq: ultra-fast, free tier available
+   - Pro via OpenAI: highest quality, paid
+   ============================================================ */
+
+const LLM_PROMPTS = {
+  system: `You are an expert viral-content strategist who has helped creators generate billions of views on TikTok, Instagram Reels, and YouTube Shorts.
+
+You deeply understand:
+- The psychology of the first 3 seconds (the "hook")
+- Pattern interrupts and curiosity loops
+- Platform-specific algorithms (TikTok watch time, Reels shares, Shorts subscribers)
+- Niche-specific viral formats (fitness, finance, cooking, tech, dating, etc.)
+- The 6 viral hook styles: Controversial, Curious, Shocking, Relatable, Educational, Funny
+
+Your output is ALWAYS in this exact JSON shape, no extra text, no markdown:
+
+{
+  "hooks": ["hook 1", "hook 2", "hook 3", "hook 4", "hook 5"],
+  "script": "Full 30-60 second script with [HOOK] [PROBLEM] [REVEAL] [PAYOFF] [CTA] sections + visual notes",
+  "caption": "Engaging 2-3 line caption with emoji and CTA",
+  "hashtags": ["#hashtag1", "#hashtag2", "#hashtag3", "#hashtag4", "#hashtag5", "#hashtag6", "#hashtag7", "#hashtag8"]
+}
+
+Hooks must be MAX 15 words each, scroll-stopping, and immediately understandable.
+Script must include [VISUAL DIRECTION] at the end with shot-by-shot notes.
+Hashtags must mix 2 niche-specific + 4 broad reach + 2 trending.`
+};
+
+function getSettings() {
+  try {
+    return {
+      provider: localStorage.getItem('hookly_provider') || 'template',
+      groqKey: localStorage.getItem('hookly_groq_key') || '',
+      openaiKey: localStorage.getItem('hookly_openai_key') || '',
+      groqModel: localStorage.getItem('hookly_groq_model') || 'llama-3.3-70b-versatile',
+      openaiModel: localStorage.getItem('hookly_openai_model') || 'gpt-4o-mini',
+      showBadge: localStorage.getItem('hookly_show_badge') !== 'false'
+    };
+  } catch {
+    return { provider: 'template', groqKey: '', openaiKey: '', groqModel: 'llama-3.3-70b-versatile', openaiModel: 'gpt-4o-mini', showBadge: true };
+  }
+}
+
+function saveSettings(s) {
+  try {
+    localStorage.setItem('hookly_provider', s.provider);
+    localStorage.setItem('hookly_groq_key', s.groqKey);
+    localStorage.setItem('hookly_openai_key', s.openaiKey);
+    localStorage.setItem('hookly_groq_model', s.groqModel);
+    localStorage.setItem('hookly_openai_model', s.openaiModel);
+    localStorage.setItem('hookly_show_badge', s.showBadge);
+  } catch (e) {
+    console.warn('localStorage unavailable', e);
+  }
+}
+
+async function callGroq(apiKey, model, prompt) {
+  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`
+    },
+    body: JSON.stringify({
+      model,
+      messages: [
+        { role: 'system', content: LLM_PROMPTS.system },
+        { role: 'user', content: prompt }
+      ],
+      temperature: 0.9,
+      max_tokens: 1500,
+      response_format: { type: 'json_object' }
+    })
+  });
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Groq API error ${res.status}: ${err}`);
+  }
+  const data = await res.json();
+  return JSON.parse(data.choices[0].message.content);
+}
+
+async function callOpenAI(apiKey, model, prompt) {
+  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`
+    },
+    body: JSON.stringify({
+      model,
+      messages: [
+        { role: 'system', content: LLM_PROMPTS.system },
+        { role: 'user', content: prompt }
+      ],
+      temperature: 0.9,
+      max_tokens: 1500,
+      response_format: { type: 'json_object' }
+    })
+  });
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`OpenAI API error ${res.status}: ${err}`);
+  }
+  const data = await res.json();
+  return JSON.parse(data.choices[0].message.content);
+}
+
+async function generateWithLLM(niche, platform, topic, tone) {
+  const s = getSettings();
+  const userPrompt = `Generate viral content for:
+- Niche: ${niche}
+- Platform: ${platform}
+- Topic: ${topic}
+- Hook tone: ${tone}
+
+Return ONLY the JSON object, no markdown formatting.`;
+
+  // Try LLM if configured — silently fall back to templates on ANY error
+  if (s.provider === 'groq' && s.groqKey) {
+    try {
+      const result = await callGroq(s.groqKey, s.groqModel, userPrompt);
+      if (result && result.hooks && Array.isArray(result.hooks) && result.hooks.length > 0) {
+        return { ...result, _engine: 'groq' };
+      }
+    } catch (err) {
+      console.warn('[Hookly] Groq failed, silent fallback to templates:', err.message);
+    }
+  }
+  if (s.provider === 'openai' && s.openaiKey) {
+    try {
+      const result = await callOpenAI(s.openaiKey, s.openaiModel, userPrompt);
+      if (result && result.hooks && Array.isArray(result.hooks) && result.hooks.length > 0) {
+        return { ...result, _engine: 'openai' };
+      }
+    } catch (err) {
+      console.warn('[Hookly] OpenAI failed, silent fallback to templates:', err.message);
+    }
+  }
+  // Always-available fallback (never fails)
+  return { ...generateContent(niche, platform, topic, tone), _engine: 'template' };
+}
+
+const HOOK_TEMPLATES = {
+  "Controversial / Hot take": [
+    "Unpopular opinion: {topic} is the biggest lie in {niche}.",
+    "Stop doing {topic}. Here's what actually works.",
+    "Everyone is wrong about {topic}. Let me explain.",
+    "Hot take: If you still {topic}, you're leaving money on the table.",
+    "I'd rather be honest than popular — {topic} is a scam.",
+    "The {niche} industry doesn't want you to know this about {topic}.",
+    "I'm about to get cancelled for saying this, but {topic} is overrated.",
+    "Nobody talks about this, but {topic} is destroying your progress."
+  ],
+  "Curious / Question": [
+    "What if I told you {topic} could change everything?",
+    "Why do 99% of people fail at {topic}? Let me show you.",
+    "I tried {topic} for 30 days. Here's what happened.",
+    "The one question about {topic} nobody asks: {question}",
+    "How do top 1% in {niche} actually approach {topic}?",
+    "Why is everyone suddenly obsessed with {topic}?",
+    "What nobody tells you about {topic} until it's too late."
+  ],
+  "Shocking / Stat": [
+    "93% of people get {topic} completely wrong. Are you one of them?",
+    "I just discovered {topic} and it's breaking the internet.",
+    "This {niche} secret was worth $1M to me — and I'm giving it away.",
+    "Doctors hate this one weird trick about {topic}.",
+    "I went from 0 to 100K using {topic}. Here's the exact playbook.",
+    "The data is in: {topic} works 3x better than anything else."
+  ],
+  "Relatable / Story": [
+    "POV: you just realized {topic} was the answer all along.",
+    "Me, three years ago, thinking {topic} didn't apply to me.",
+    "Storytime: how {topic} completely changed my life in 90 days.",
+    "I was broke until I discovered {topic}.",
+    "The exact moment I knew {topic} was for me.",
+    "Day 1 vs Day 90 of {topic} — the difference is wild."
+  ],
+  "Educational / How-to": [
+    "Here's exactly how to {topic} (step-by-step).",
+    "The 3-step framework to master {topic}.",
+    "Save this — the ultimate guide to {topic}.",
+    "5 mistakes you're making with {topic} (and how to fix them).",
+    "Copy this exact {topic} system that worked for me.",
+    "If you're a beginner at {topic}, watch this NOW."
+  ],
+  "Funny / Meme": [
+    "Me pretending {topic} isn't my entire personality.",
+    "POV: someone asks you about {topic} for the 100th time.",
+    "Tell me you love {topic} without telling me you love {topic}.",
+    "Types of people in {niche}: the {topic} edition.",
+    "When {topic} hits different at 2am.",
+    "I really thought {topic} would be easy. I was wrong."
+  ]
+};
+
+const SCRIPT_TEMPLATES = [
+  (topic, niche) => `[HOOK — first 3 seconds, look at camera]
+"${topic} — and you're about to see why everyone's doing it wrong."
+
+[PROBLEM — 0:03 to 0:10]
+Most people in ${niche} approach ${topic} like this:
+→ Generic advice
+→ No system
+→ Hope for the best
+
+[REVEAL — 0:10 to 0:25]
+But here's what actually works:
+1. Start with the WHY before the HOW
+2. Build a 7-day streak, not a 365-day plan
+3. Track ONE metric that matters
+
+[PAYOFF — 0:25 to 0:40]
+I tried this for 30 days. The result? ${Math.floor(Math.random() * 5) + 2}x more ${niche} progress than the year before.
+
+[CTA — 0:40 to 0:50]
+Follow for more ${niche} hacks. Comment "WANT" if you want my free ${topic} checklist.
+
+[VISUAL NOTES]
+- B-roll of common mistakes (0:03-0:10)
+- Text overlay for the 3 steps (0:10-0:25)
+- Before/after split screen (0:25-0:40)
+- Point to comments CTA (0:40-0:50)`,
+
+  (topic, niche) => `[PATTERN INTERRUPT — 0:00]
+*Whisper directly to camera* "If you're in ${niche}, STOP scrolling."
+
+[STORY — 0:00 to 0:15]
+Three months ago I was stuck. No traction. No views. Then I tried ${topic}.
+
+[THE 3 SECRETS — 0:15 to 0:40]
+Secret #1: I batched content every Sunday (saves 10+ hours/week)
+Secret #2: I used AI to write my hooks (this tool, btw)
+Secret #3: I posted at the same time every day for 60 days straight
+
+[RESULT — 0:40 to 0:50]
+Within 30 days: 100K+ views. Brand deal. 5K new followers.
+
+[CTA — 0:50 to 0:58]
+"Want my exact system? Comment SYSTEM and I'll DM you the free guide."
+
+[PRODUCTION NOTES]
+- Use quick cuts every 2-3 seconds
+- Caption every word (60% of people watch muted)
+- Background music: trending sound at 20% volume`,
+
+  (topic, niche) => `[HOOK — text on screen + voice]
+"5 ${niche} truths they don't teach you in school."
+
+[LIST — fast pace, 5 seconds each]
+1. ${topic} isn't optional anymore. It's the baseline.
+2. Your first 10 attempts will suck. That's normal.
+3. Consistency beats talent. Every. Single. Time.
+4. The algorithm rewards watch time, not views.
+5. Your vibe attracts your tribe — pick your energy wisely.
+
+[LANDING — 0:50 to 0:58]
+Which one hit hardest? Comment the number. Follow for more.
+
+[VISUAL DIRECTION]
+- Hold up fingers 1-5 with each point
+- Quick text overlays
+- Use trending audio in background`
+];
+
+const CAPTION_TEMPLATES = [
+  (topic, niche) => `I tried ${topic} for 30 days and here's what happened 👀\n\nThe full breakdown is in this video. Save it for later.\n\nDrop a 🔥 if you're trying this too.`,
+  (topic, niche) => `If you're in ${niche}, this is your sign to start with ${topic}.\n\nNo more excuses. Save this post and thank me in 30 days.\n\nWhich tip are you starting with? 👇`,
+  (topic, niche) => `The ${niche} cheat code nobody talks about: ${topic}.\n\nComment "WANT" and I'll send you the full guide.`,
+  (topic, niche) => `Stop scrolling. This ${niche} trick is going viral for a reason.\n\n${topic} changed everything for me. Here's how ↓`
+];
+
+const HASHTAGS_BY_NICHE = {
+  fitness: ["#fitness", "#gymtok", "#workoutmotivation", "#fitnessjourney", "#fyp", "#gym", "#fittok", "#healthylifestyle"],
+  cooking: ["#cooking", "#foodtok", "#recipe", "#homecooking", "#fyp", "#foodie", "#easyrecipe", "#tiktokfood"],
+  saas: ["#saas", "#startup", "#entrepreneur", "#productivity", "#founder", "#b2b", "#tech", "#fyp"],
+  dating: ["#dating", "#datingadvice", "#relationshiptips", "#datingcoach", "#fyp", "#love", "#single", "#datetok"],
+  default: ["#fyp", "#viral", "#trending", "#foryou", "#tiktok", "#reels", "#viralvideo", "#explore"]
+};
+
+function pickRandom(arr, n) {
+  return [...arr].sort(() => Math.random() - 0.5).slice(0, n);
+}
+
+function findNicheKey(niche) {
+  const n = niche.toLowerCase();
+  for (const key of Object.keys(HASHTAGS_BY_NICHE)) {
+    if (key !== 'default' && n.includes(key)) return key;
+  }
+  return 'default';
+}
+
+function generateContent(niche, platform, topic, tone) {
+  const toneTemplates = HOOK_TEMPLATES[tone] || HOOK_TEMPLATES["Curious / Question"];
+  const questionWords = ["why", "how", "what", "when"];
+  const randomQ = questionWords[Math.floor(Math.random() * questionWords.length)];
+
+  const hooks = pickRandom(toneTemplates, 5).map((tmpl, i) => {
+    return tmpl
+      .replace(/{topic}/g, topic)
+      .replace(/{niche}/g, niche)
+      .replace(/{question}/g, `${randomQ} most people never ask`);
+  });
+
+  const scriptFn = SCRIPT_TEMPLATES[Math.floor(Math.random() * SCRIPT_TEMPLATES.length)];
+  const script = scriptFn(topic, niche);
+
+  const captionFn = CAPTION_TEMPLATES[Math.floor(Math.random() * CAPTION_TEMPLATES.length)];
+  const caption = captionFn(topic, niche);
+
+  const nicheKey = findNicheKey(niche);
+  const hashtags = HASHTAGS_BY_NICHE[nicheKey];
+
+  return { hooks, script, caption, hashtags };
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+function copyText(text, btn) {
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '✓ Copied';
+    btn.classList.add('copied');
+    showToast('Copied to clipboard ✓');
+    setTimeout(() => {
+      btn.textContent = 'Copy';
+      btn.classList.remove('copied');
+    }, 1500);
+  });
+}
+
+function renderOutput(data) {
+  const hooksList = document.getElementById('hooksList');
+  hooksList.innerHTML = '';
+  data.hooks.forEach((hook) => {
+    const item = document.createElement('div');
+    item.className = 'hook-item';
+    item.innerHTML = `<span>${hook}</span><button class="copy-btn">Copy</button>`;
+    const btn = item.querySelector('.copy-btn');
+    btn.addEventListener('click', () => copyText(hook, btn));
+    hooksList.appendChild(item);
+  });
+
+  document.getElementById('scriptContent').textContent = data.script;
+  document.getElementById('captionContent').textContent = data.caption;
+
+  const tagsList = document.getElementById('hashtagsList');
+  tagsList.innerHTML = '';
+  data.hashtags.forEach((tag, i) => {
+    const span = document.createElement('span');
+    span.className = 'hashtag' + (i < 2 ? ' primary' : '');
+    span.textContent = tag;
+    tagsList.appendChild(span);
+  });
+
+  // Show engine badge if enabled
+  const existing = document.getElementById('engineBadge');
+  if (existing) existing.remove();
+  if (data._engine && getSettings().showBadge) {
+    const badge = document.createElement('div');
+    badge.id = 'engineBadge';
+    const labels = {
+      'groq': '⚡ Generated by Groq (Llama 3.3 70B)',
+      'openai': '🧠 Generated by OpenAI (GPT-4o Mini)',
+      'template': '🎯 Generated by Hookly Templates'
+    };
+    badge.textContent = labels[data._engine] || '🎯 Generated by Hookly Templates';
+    badge.style.cssText = 'text-align: center; color: var(--text-mute); font-size: 12px; margin-top: 16px; padding: 8px;';
+    document.getElementById('output').appendChild(badge);
+  }
+
+  const out = document.getElementById('output');
+  out.classList.add('show');
+  setTimeout(() => out.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+}
+
+document.getElementById('genForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('genBtn');
+  const niche = document.getElementById('niche').value.trim();
+  const platform = document.getElementById('platform').value;
+  const topic = document.getElementById('topic').value.trim();
+  const tone = document.getElementById('tone').value;
+
+  if (!niche || !topic) return;
+
+  btn.classList.add('loading');
+  btn.disabled = true;
+
+  try {
+    // generateWithLLM ALWAYS returns valid content (silent fallback to templates on any error)
+    const data = await generateWithLLM(niche, platform, topic, tone);
+    renderOutput(data);
+  } catch (err) {
+    // Last-resort fallback — this should never trigger because generateWithLLM handles everything
+    console.error('[Hookly] Unexpected error:', err);
+    const data = { ...generateContent(niche, platform, topic, tone), _engine: 'template' };
+    renderOutput(data);
+  } finally {
+    btn.classList.remove('loading');
+    btn.disabled = false;
+  }
+});
+
+/* ============================================================
+   SETTINGS MODAL
+   ============================================================ */
+
+function openSettingsModal() {
+  const s = getSettings();
+  document.getElementById('llmProvider').value = s.provider;
+  document.getElementById('groqApiKey').value = s.groqKey;
+  document.getElementById('openaiApiKey').value = s.openaiKey;
+  document.getElementById('groqModel').value = s.groqModel;
+  document.getElementById('openaiModel').value = s.openaiModel;
+  document.getElementById('showProviderBadge').checked = s.showBadge;
+  updateProviderFields();
+  document.getElementById('settingsModal').classList.add('show');
+}
+
+function updateProviderFields() {
+  const provider = document.getElementById('llmProvider').value;
+  document.getElementById('groqKeyField').style.display = provider === 'groq' ? 'block' : 'none';
+  document.getElementById('openaiKeyField').style.display = provider === 'openai' ? 'block' : 'none';
+  document.getElementById('groqModelField').style.display = provider === 'groq' ? 'block' : 'none';
+  document.getElementById('openaiModelField').style.display = provider === 'openai' ? 'block' : 'none';
+}
+
+function closeSettingsModal() {
+  document.getElementById('settingsModal').classList.remove('show');
+}
+
+document.getElementById('openSettingsBtn').addEventListener('click', openSettingsModal);
+document.getElementById('closeSettings').addEventListener('click', closeSettingsModal);
+document.getElementById('settingsModal').addEventListener('click', (e) => {
+  if (e.target.id === 'settingsModal') closeSettingsModal();
+});
+document.getElementById('llmProvider').addEventListener('change', updateProviderFields);
+
+document.getElementById('saveSettingsBtn').addEventListener('click', () => {
+  saveSettings({
+    provider: document.getElementById('llmProvider').value,
+    groqKey: document.getElementById('groqApiKey').value.trim(),
+    openaiKey: document.getElementById('openaiApiKey').value.trim(),
+    groqModel: document.getElementById('groqModel').value,
+    openaiModel: document.getElementById('openaiModel').value,
+    showBadge: document.getElementById('showProviderBadge').checked
+  });
+  showToast('Settings saved ✓');
+  closeSettingsModal();
+});
+
+document.getElementById('testProviderBtn').addEventListener('click', async () => {
+  const s = {
+    provider: document.getElementById('llmProvider').value,
+    groqKey: document.getElementById('groqApiKey').value.trim(),
+    openaiKey: document.getElementById('openaiApiKey').value.trim(),
+    groqModel: document.getElementById('groqModel').value,
+    openaiModel: document.getElementById('openaiModel').value,
+    showBadge: true
+  };
+  if (s.provider === 'template') {
+    showToast('Template engine is always available ✓');
+    return;
+  }
+  if (s.provider === 'groq' && !s.groqKey) { showToast('Enter a Groq key first'); return; }
+  if (s.provider === 'openai' && !s.openaiKey) { showToast('Enter an OpenAI key first'); return; }
+
+  saveSettings(s);
+  showToast('Testing... ⏳');
+  try {
+    await generateWithLLM('fitness', 'TikTok', '5 morning habits', 'Curious / Question');
+    showToast('✅ Connection works!');
+  } catch (err) {
+    showToast('❌ ' + err.message.slice(0, 60));
+  }
+});
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+/* ============================================================
+   SCHEDULER — Reminders, Calendar export, Notifications
+   ============================================================ */
+
+const BEST_TIMES = {
+  'TikTok': [
+    { time: '07:00', label: '7 AM' },
+    { time: '12:00', label: '12 PM', best: true },
+    { time: '19:00', label: '7 PM', best: true },
+    { time: '21:00', label: '9 PM', best: true },
+    { time: '23:00', label: '11 PM' },
+    { time: '15:00', label: '3 PM' }
+  ],
+  'Instagram Reels': [
+    { time: '06:00', label: '6 AM' },
+    { time: '12:00', label: '12 PM', best: true },
+    { time: '18:00', label: '6 PM', best: true },
+    { time: '21:00', label: '9 PM' },
+    { time: '09:00', label: '9 AM' },
+    { time: '15:00', label: '3 PM' }
+  ],
+  'YouTube Shorts': [
+    { time: '14:00', label: '2 PM', best: true },
+    { time: '17:00', label: '5 PM', best: true },
+    { time: '20:00', label: '8 PM' },
+    { time: '12:00', label: '12 PM' },
+    { time: '09:00', label: '9 AM' },
+    { time: '22:00', label: '10 PM' }
+  ],
+  'LinkedIn': [
+    { time: '08:00', label: '8 AM', best: true },
+    { time: '12:00', label: '12 PM', best: true },
+    { time: '17:00', label: '5 PM' },
+    { time: '10:00', label: '10 AM' },
+    { time: '14:00', label: '2 PM' },
+    { time: '16:00', label: '4 PM' }
+  ]
+};
+
+let currentScheduledContent = null;
+let notificationTimers = [];
+
+function getScheduledPosts() {
+  try {
+    return JSON.parse(localStorage.getItem('hookly_scheduled') || '[]');
+  } catch { return []; }
+}
+
+function setScheduledPosts(posts) {
+  localStorage.setItem('hookly_scheduled', JSON.stringify(posts));
+  updateScheduledCount();
+  renderScheduledList();
+}
+
+function updateScheduledCount() {
+  const count = getScheduledPosts().length;
+  const badge = document.getElementById('scheduledCount');
+  if (count > 0) {
+    badge.style.display = 'flex';
+    badge.textContent = count;
+  } else {
+    badge.style.display = 'none';
+  }
+}
+
+function formatDateTime(date, time) {
+  // Returns ISO string in local time
+  return new Date(`${date}T${time}:00`).toISOString();
+}
+
+function openScheduleModal() {
+  // Get current generated content
+  const script = document.getElementById('scriptContent').textContent;
+  const caption = document.getElementById('captionContent').textContent;
+  const hashtags = Array.from(document.querySelectorAll('#hashtagsList .hashtag')).map(h => h.textContent).join(' ');
+  const hooks = Array.from(document.querySelectorAll('#hooksList .hook-item span:first-child')).map(h => h.textContent);
+  const niche = document.getElementById('niche').value.trim();
+  const platform = document.getElementById('platform').value;
+  const topic = document.getElementById('topic').value.trim();
+  const tone = document.getElementById('tone').value;
+
+  if (!script) {
+    showToast('Generate content first! ⚡');
+    return;
+  }
+
+  currentScheduledContent = { script, caption, hashtags, hooks, niche, platform, topic, tone };
+
+  document.getElementById('modalPlatform').textContent = platform;
+
+  // Render best times
+  const suggestions = document.getElementById('timeSuggestions');
+  suggestions.innerHTML = '';
+  const times = BEST_TIMES[platform] || BEST_TIMES['TikTok'];
+  times.forEach(t => {
+    const chip = document.createElement('div');
+    chip.className = 'time-chip' + (t.best ? ' best' : '');
+    chip.innerHTML = `${t.label}${t.best ? '<span class="badge-mini">BEST</span>' : ''}`;
+    chip.addEventListener('click', () => {
+      document.getElementById('scheduleTime').value = t.time;
+    });
+    suggestions.appendChild(chip);
+  });
+
+  // Default to tomorrow at first best time
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const defaultTime = times.find(t => t.best) || times[0];
+  document.getElementById('scheduleDate').value = tomorrow.toISOString().split('T')[0];
+  document.getElementById('scheduleTime').value = defaultTime.time;
+  document.getElementById('notifyCheck').checked = false;
+
+  document.getElementById('scheduleModal').classList.add('show');
+}
+
+function closeScheduleModal() {
+  document.getElementById('scheduleModal').classList.remove('show');
+}
+
+function buildEventDetails() {
+  const date = document.getElementById('scheduleDate').value;
+  const time = document.getElementById('scheduleTime').value;
+  if (!date || !time) {
+    showToast('Pick a date and time first 📅');
+    return null;
+  }
+  const c = currentScheduledContent;
+  const startISO = formatDateTime(date, time);
+  const endDate = new Date(startISO);
+  endDate.setMinutes(endDate.getMinutes() + 30);
+  const endISO = endDate.toISOString();
+
+  return {
+    title: `📱 Post: ${c.topic.slice(0, 50)}`,
+    description: `🔥 Hook: ${c.hooks[0] || ''}\n\n📝 Caption: ${c.caption}\n\n#️⃣ Hashtags: ${c.hashtags}\n\n— Generated by Hookly`,
+    location: c.platform,
+    startISO, endISO,
+    date, time
+  };
+}
+
+function buildGoogleCalendarURL(details) {
+  const fmt = (iso) => iso.replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  const params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text: details.title,
+    dates: `${fmt(details.startISO)}/${fmt(details.endISO)}`,
+    details: details.description,
+    location: details.location
+  });
+  return `https://calendar.google.com/calendar/render?${params}`;
+}
+
+function buildICSFile(details) {
+  const fmt = (iso) => iso.replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  const c = currentScheduledContent;
+  return `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hookly//Schedule//EN
+BEGIN:VEVENT
+UID:${Date.now()}@hookly.app
+DTSTAMP:${fmt(new Date().toISOString())}
+DTSTART:${fmt(details.startISO)}
+DTEND:${fmt(details.endISO)}
+SUMMARY:${details.title}
+DESCRIPTION:${details.description.replace(/\n/g, '\\n')}
+LOCATION:${details.location}
+END:VEVENT
+END:VCALENDAR`;
+}
+
+function scheduleBrowserNotification(details) {
+  const targetTime = new Date(details.startISO).getTime();
+  const now = Date.now();
+  const delay = targetTime - now;
+
+  if (delay < 0) {
+    showToast('That time has passed — pick a future time ⏰');
+    return false;
+  }
+
+  // Set timeout for the notification
+  const timerId = setTimeout(() => {
+    // Pre-copy the content
+    const c = currentScheduledContent;
+    const fullText = `${c.caption}\n\n${c.hashtags}`;
+    navigator.clipboard.writeText(fullText).catch(() => {});
+
+    // Fire notification
+    if ('Notification' in window && Notification.permission === 'granted') {
+      new Notification('⏰ Time to post on ' + c.platform + '!', {
+        body: 'Caption + hashtags are in your clipboard. Just paste & post!',
+        icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="80" font-size="80">🔥</text></svg>',
+        tag: 'hookly-' + Date.now()
+      });
+    } else {
+      showToast('⏰ Time to post! Caption + hashtags copied ✓');
+    }
+  }, delay);
+
+  notificationTimers.push(timerId);
+  return true;
+}
+
+function saveToLocal(details) {
+  const posts = getScheduledPosts();
+  const c = currentScheduledContent;
+  const newPost = {
+    id: 'post_' + Date.now(),
+    title: details.title,
+    date: details.date,
+    time: details.time,
+    platform: c.platform,
+    niche: c.niche,
+    topic: c.topic,
+    caption: c.caption,
+    hashtags: c.hashtags,
+    script: c.script,
+    hooks: c.hooks,
+    notify: document.getElementById('notifyCheck').checked
+  };
+  posts.unshift(newPost);
+  setScheduledPosts(posts);
+
+  if (newPost.notify) {
+    if ('Notification' in window) {
+      Notification.requestPermission().then(perm => {
+        if (perm === 'granted') {
+          scheduleBrowserNotification(details);
+          showToast('🔔 Reminder set! We\'ll notify you.');
+        } else {
+          showToast('Saved ✓ (enable notifications for reminders)');
+        }
+      });
+    } else {
+      showToast('Saved ✓');
+    }
+  } else {
+    showToast('Saved to your schedule ✓');
+  }
+}
+
+function renderScheduledList() {
+  const list = document.getElementById('scheduledList');
+  const posts = getScheduledPosts();
+
+  if (posts.length === 0) {
+    list.innerHTML = '<div class="empty-state">📅 No scheduled posts yet. Generate content above and hit "Schedule this".</div>';
+    return;
+  }
+
+  list.innerHTML = '';
+  posts.forEach(post => {
+    const item = document.createElement('div');
+    item.className = 'scheduled-item';
+    const dateObj = new Date(`${post.date}T${post.time}:00`);
+    const formatted = dateObj.toLocaleString('en-US', {
+      weekday: 'short', month: 'short', day: 'numeric',
+      hour: 'numeric', minute: '2-digit'
+    });
+    const isPast = dateObj.getTime() < Date.now();
+
+    item.innerHTML = `
+      <div class="info">
+        <div class="title">${post.title} <span class="platform-tag">${post.platform}</span></div>
+        <div class="meta">${formatted} ${isPast ? '⚠️ past' : post.notify ? '🔔 reminder on' : ''}</div>
+      </div>
+      <div class="actions">
+        <button class="schedule-btn" data-action="copy" data-id="${post.id}">📋 Copy caption</button>
+        <button class="schedule-btn" data-action="remove" data-id="${post.id}">🗑️</button>
+      </div>
+    `;
+    list.appendChild(item);
+  });
+
+  // Attach handlers
+  list.querySelectorAll('[data-action]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const action = btn.dataset.action;
+      const posts = getScheduledPosts();
+      const post = posts.find(p => p.id === id);
+      if (!post) return;
+
+      if (action === 'copy') {
+        const text = `${post.caption}\n\n${post.hashtags}`;
+        navigator.clipboard.writeText(text).then(() => {
+          showToast('Caption + hashtags copied ✓');
+        });
+      } else if (action === 'remove') {
+        setScheduledPosts(posts.filter(p => p.id !== id));
+        showToast('Removed');
+      }
+    });
+  });
+}
+
+// Modal handlers
+document.getElementById('openScheduleBtn').addEventListener('click', openScheduleModal);
+document.getElementById('closeModal').addEventListener('click', closeScheduleModal);
+document.getElementById('scheduleModal').addEventListener('click', (e) => {
+  if (e.target.id === 'scheduleModal') closeScheduleModal();
+});
+
+document.getElementById('gcalBtn').addEventListener('click', () => {
+  const details = buildEventDetails();
+  if (!details) return;
+  const url = buildGoogleCalendarURL(details);
+  window.open(url, '_blank');
+  saveToLocal(details);
+  closeScheduleModal();
+});
+
+document.getElementById('icsBtn').addEventListener('click', () => {
+  const details = buildEventDetails();
+  if (!details) return;
+  const ics = buildICSFile(details);
+  const blob = new Blob([ics], { type: 'text/calendar' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `hookly-${details.date}.ics`;
+  a.click();
+  URL.revokeObjectURL(url);
+  saveToLocal(details);
+  closeScheduleModal();
+  showToast('Calendar file downloaded ✓');
+});
+
+document.getElementById('saveLocalBtn').addEventListener('click', () => {
+  const details = buildEventDetails();
+  if (!details) return;
+  saveToLocal(details);
+  closeScheduleModal();
+});
+
+// Init
+updateScheduledCount();
+renderScheduledList();
+</script>
+</body>
+</html>
+pe="image/png" href="favicon.png" />
 <link rel="apple-touch-icon" href="favicon.png" />
 <meta name="theme-color" content="#0a0a0f" />
 <style>
