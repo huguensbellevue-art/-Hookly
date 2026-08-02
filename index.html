@@ -627,6 +627,51 @@
         <button class="schedule-btn primary" id="publishAllBtn">📤 Publish to All</button>
       </div>
 
+      <!-- Manual share for upcoming platforms (same UX as TikTok) -->
+      <h3 style="margin: 30px 0 12px; color: var(--text); font-size: 16px; font-weight: 600;">📲 Share to other platforms <span style="color: var(--text-mute); font-size: 12px; font-weight: 400;">(one-click to app, then paste)</span></h3>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+
+        <div class="output-section" style="margin: 0;">
+          <h3>📸 Instagram</h3>
+          <p style="color: var(--text-dim); font-size: 13px; margin: 6px 0 10px;">Best on mobile. Caption + image required.</p>
+          <button class="schedule-btn primary" data-share-platform="instagram" data-mobile="instagram://library" data-web="https://www.instagram.com/" style="font-size: 13px;">📤 Share to Instagram</button>
+        </div>
+
+        <div class="output-section" style="margin: 0;">
+          <h3>📘 Facebook</h3>
+          <p style="color: var(--text-dim); font-size: 13px; margin: 6px 0 10px;">Works on mobile + desktop.</p>
+          <button class="schedule-btn primary" data-share-platform="facebook" data-mobile="fb://publish/posts" data-web="https://www.facebook.com/" style="font-size: 13px;">📤 Share to Facebook</button>
+        </div>
+
+        <div class="output-section" style="margin: 0;">
+          <h3>💼 LinkedIn</h3>
+          <p style="color: var(--text-dim); font-size: 13px; margin: 6px 0 10px;">Text posts work great on web.</p>
+          <button class="schedule-btn primary" data-share-platform="linkedin" data-mobile="linkedin://" data-web="https://www.linkedin.com/feed/" style="font-size: 13px;">📤 Share to LinkedIn</button>
+        </div>
+
+        <div class="output-section" style="margin: 0;">
+          <h3>🐦 X / Twitter</h3>
+          <p style="color: var(--text-dim); font-size: 13px; margin: 6px 0 10px;">Web compose is the cleanest path.</p>
+          <button class="schedule-btn primary" data-share-platform="twitter" data-mobile="twitter://post" data-web="https://twitter.com/compose/post" style="font-size: 13px;">📤 Share to X / Twitter</button>
+        </div>
+
+        <div class="output-section" style="margin: 0;">
+          <h3>📌 Pinterest</h3>
+          <p style="color: var(--text-dim); font-size: 13px; margin: 6px 0 10px;">Best for visual content (pin a card).</p>
+          <button class="schedule-btn primary" data-share-platform="pinterest" data-mobile="pinterest://" data-web="https://www.pinterest.com/" style="font-size: 13px;">📤 Share to Pinterest</button>
+        </div>
+
+        <div class="output-section" style="margin: 0;">
+          <h3>🤖 Reddit</h3>
+          <p style="color: var(--text-dim); font-size: 13px; margin: 6px 0 10px;">Submit to a subreddit.</p>
+          <button class="schedule-btn primary" data-share-platform="reddit" data-mobile="reddit://" data-web="https://www.reddit.com/submit" style="font-size: 13px;">📤 Share to Reddit</button>
+        </div>
+
+      </div>
+
+      <div id="shareLog" style="margin-top: 16px;"></div>
+
       <div id="publishLog" style="margin-top: 16px; padding: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; font-size: 13px; min-height: 30px; color: var(--text-dim); font-family: monospace;"></div>
 
       <!-- Coming soon roadmap -->
@@ -2156,6 +2201,99 @@ function wrapText(ctx, text, maxWidth) {
   if (current) lines.push(current);
   return lines;
 }
+
+/* ============================================================
+   UNIVERSAL PLATFORM SHARE — One-click to app with caption
+   Used for Instagram, Facebook, LinkedIn, X, Pinterest, Reddit
+   ============================================================ */
+
+const PLATFORM_POSTS = {
+  twitter: 'postTwitter',
+  linkedin: 'postLinkedin',
+  facebook: 'postFacebook',
+  instagram: 'postInstagram',
+  pinterest: 'postInstagram', // Pinterest uses IG-style caption + image
+  reddit: 'postReddit'
+};
+
+const PLATFORM_INSTRUCTIONS = {
+  instagram: {
+    mobile: '📱 <strong>On mobile:</strong> The Instagram app opened. Tap + → Post → Select the script card image (or any image) → Paste the caption in the description → Share.',
+    desktop: '💻 <strong>On desktop:</strong> Instagram web doesn\'t support posting. Switch to your phone and use the Instagram app directly.'
+  },
+  facebook: {
+    mobile: '📱 <strong>On mobile:</strong> Facebook app opened. Tap "What\'s on your mind?" → Paste the caption → Add the script card as photo → Post.',
+    desktop: '💻 <strong>On desktop:</strong> Facebook opened. Click "Create Story" or "Create Post" → Paste the caption → Upload the script card image → Post.'
+  },
+  linkedin: {
+    mobile: '📱 <strong>On mobile:</strong> LinkedIn app opened. Tap "Start a post" → Paste the caption → (Optional: add image) → Post.',
+    desktop: '💻 <strong>On desktop:</strong> LinkedIn opened. Click "Start a post" → Paste the caption → (Optional: upload the script card) → Post.'
+  },
+  twitter: {
+    mobile: '📱 <strong>On mobile:</strong> X app opened. Tap the compose button → Paste the tweet → Post.',
+    desktop: '💻 <strong>On desktop:</strong> X compose page opened. Paste the tweet (already in clipboard) → Post.'
+  },
+  pinterest: {
+    mobile: '📱 <strong>On mobile:</strong> Pinterest app opened. Tap + → Create Pin → Select the script card image → Paste the caption → Publish.',
+    desktop: '💻 <strong>On desktop:</strong> Pinterest opened. Click + → Create Pin → Upload the script card → Paste the caption → Publish.'
+  },
+  reddit: {
+    mobile: '📱 <strong>On mobile:</strong> Reddit app opened. Tap + → Post → Choose a subreddit → Paste the text → Post.',
+    desktop: '💻 <strong>On desktop:</strong> Reddit submit page opened. Choose a subreddit → Paste the text → Post.'
+  }
+};
+
+document.querySelectorAll('[data-share-platform]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const platform = btn.dataset.sharePlatform;
+    const mobileUrl = btn.dataset.mobile;
+    const webUrl = btn.dataset.web;
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const log = document.getElementById('shareLog');
+
+    // Get the platform-specific post (or fall back to twitter post which is shortest)
+    const postElId = PLATFORM_POSTS[platform];
+    let caption = '';
+    if (postElId) {
+      const el = document.getElementById(postElId);
+      if (el) caption = el.textContent;
+    }
+    if (!caption || caption.length < 10) {
+      caption = `I built a free AI tool that writes viral TikTok hooks in 10 seconds. Try it: usehookly.netlify.app\n\n#aitools #fyp`;
+    }
+
+    // Copy caption to clipboard
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(caption).catch(() => {});
+    }
+
+    // Show instructions
+    const instr = PLATFORM_INSTRUCTIONS[platform] || { mobile: '', desktop: '' };
+    const instrText = isMobile ? instr.mobile : instr.desktop;
+    const targetUrl = isMobile ? mobileUrl : webUrl;
+    const platformName = btn.parentElement.querySelector('h3').textContent;
+
+    log.innerHTML = `
+      <div style="background: var(--bg-card); padding: 14px; border-radius: 10px; border: 1px solid var(--border);">
+        <div style="color: var(--green); font-weight: 600; margin-bottom: 8px;">✅ ${platformName} — caption copied</div>
+        <div style="color: var(--text-dim); font-size: 13px; line-height: 1.6;">${instrText}</div>
+        <a href="${targetUrl}" target="_blank" rel="noopener" class="schedule-btn" style="display: inline-block; text-decoration: none; margin-top: 10px;">
+          ${isMobile ? '🎵 Open App again' : '🌐 Open Web again'} →
+        </a>
+      </div>
+    `;
+
+    // Open the app or web
+    if (isMobile && mobileUrl) {
+      // Deep link - on mobile, the OS will route to the app
+      window.location.href = mobileUrl;
+    } else if (webUrl) {
+      window.open(webUrl, '_blank');
+    }
+
+    showToast(`${platformName} ready! Caption copied ✓`);
+  });
+});
 </script>
 </body>
 </html>
